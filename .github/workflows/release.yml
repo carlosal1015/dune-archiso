@@ -1,0 +1,33 @@
+name: Create ISO
+
+on:
+  push:
+    branches:
+      - main
+    # paths:
+    #   - releng/**
+
+jobs:
+  manim_test:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Partial Clone
+        shell: bash
+        run: |
+          REPO="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+          git config --global user.email github-actions@github.com
+          git config --global user.name github-actions
+          git clone -q --filter=blob:none --no-checkout --depth=1  --sparse $REPO .
+          git sparse-checkout set releng
+          git checkout
+
+      - name: Look docker version
+        run: docker --version
+
+      - uses: addnab/docker-run-action@v1
+        with:
+          image: efikarl/archiso:latest
+          options: -v ${{github.workspace}}:/iso
+          shell: bash
+          run: |
+            pacman --version
