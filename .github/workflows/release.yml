@@ -29,16 +29,10 @@ jobs:
           run: |
             sudo pacman --noconfirm -Sqyu > /dev/null 2>&1
             sudo mkarchiso -v ~/releng > /dev/null 2>&1
-            ls -l ~/ ~/out
             sudo chown -R $(whoami):$(whoami) ~/out ~/releng
-            sudo chmod -R 777 ~/out/*.iso
-            sudo chmod -R 777 ~/releng
+            sudo chmod -R 777 ~/out/*.iso ~/releng
             sudo rm -rf ~/work ~/semicolon_delimited_script
-            ls -l ~/ ~/out
             mv ~/out/*.iso ~/releng
-            # cat ~/releng/packages.x86_64
-            # pacman --version
-            # sudo --version
 
       - name: "Tar files"
         run: |
@@ -47,6 +41,6 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: ISO-artifact
-          path: PDF.tar.zst
+          path: ISO.tar.zst
           if-no-files-found: error
           retention-days: 5
