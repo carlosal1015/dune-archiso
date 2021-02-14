@@ -32,7 +32,8 @@ jobs:
           options: -v ${{github.workspace}}:/work
           shell: bash
           run: |
-            cd /work && ls
-            # sudo pacman -Sqyu --noconfirm
+            sudo pacman -Sqyu --noconfirm
+            sudo mkarchiso -v /work/releng
+            ls -R /work/releng
             # pacman --version
             # sudo --version
