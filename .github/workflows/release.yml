@@ -29,7 +29,8 @@ jobs:
           run: |
             sudo pacman --noconfirm -Sqyu > /dev/null 2>&1
             sudo mkarchiso -v ~/releng
-            sudo mv ~/out/*.iso ~/releng
+            sudo chown -R $(whoami):$(whoami) ~/out
+            mv ~/out/*.iso ~/releng
             # ls ~/work ~/out
             # cat ~/releng/packages.x86_64
             # pacman --version
