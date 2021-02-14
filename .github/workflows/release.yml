@@ -29,14 +29,16 @@ jobs:
           run: |
             sudo pacman --noconfirm -Sqyu > /dev/null 2>&1
             sudo mkarchiso -v ~/releng
-            ls ~/work ~/out
-            cat ~/releng/packages.x86_64
-            pacman --version
-            sudo --version
+            mv ~/out/*.iso ~/releng
+            # ls ~/work ~/out
+            # cat ~/releng/packages.x86_64
+            # pacman --version
+            # sudo --version
 
       - name: "Tar files"
         run: |
-          tar --zstd -cf ISO.tar.zst ~/out/*.iso
+          ls -R
+          tar --zstd -cf ISO.tar.zst releng/*.iso
 
       - uses: actions/upload-artifact@v2
         with:
