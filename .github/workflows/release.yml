@@ -33,7 +33,7 @@ jobs:
           shell: bash
           run: |
             sudo pacman -Sqyu --noconfirm
-            sudo mkarchiso
-            ls -R /home/karliso/
-            # pacman --version
-            # sudo --version
+            sudo mkarchiso -v ~/work/releng
+            ls /home/karliso/work
+            pacman --version
+            sudo --version
