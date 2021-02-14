@@ -29,11 +29,12 @@ jobs:
       - uses: addnab/docker-run-action@v1
         with:
           image: efikarl/archiso:latest
-          options: -v ${{github.workspace}}:/home/karliso/
+          options: --privileged -v ${{github.workspace}}:/home/karliso/
           shell: bash
           run: |
             sudo pacman -Sqyu --noconfirm
             sudo mkarchiso -v ~/releng
-            ls ~/work ~/out
-            pacman --version
-            sudo --version
+            # ls ~/work ~/out
+            cat ~/releng
+            # pacman --version
+            # sudo --version
