@@ -29,12 +29,12 @@ jobs:
           run: |
             sudo pacman --noconfirm -Sqyu > /dev/null 2>&1
             sudo mkarchiso -v ~/releng
-            sudo chown -R $(whoami):$(whoami) ~/out
+            sudo chown -R $(whoami):$(whoami) ~/
             mv ~/out/*.iso ~/releng
-            # ls ~/work ~/out
-            # cat ~/releng/packages.x86_64
-            # pacman --version
-            # sudo --version
+            ls -l ~/work ~/out
+            cat ~/releng/packages.x86_64
+            pacman --version
+            sudo --version
 
       - name: "Tar files"
         run: |
