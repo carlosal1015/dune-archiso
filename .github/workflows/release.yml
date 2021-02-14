@@ -8,7 +8,7 @@ on:
     #   - releng/**
 
 jobs:
-  archiso_test:
+  buid_iso:
     runs-on: ubuntu-20.04
     steps:
       - name: Partial Clone
@@ -30,7 +30,7 @@ jobs:
             sudo pacman --noconfirm -Sqyu > /dev/null 2>&1
             sudo mkarchiso -v ~/releng > /dev/null 2>&1
             sudo chown -R $(whoami):$(whoami) ~/out ~/releng
-            sudo chmod -R 777 ~/out/*.iso ~/releng
+            sudo chmod -R 707 ~/out/*.iso ~/releng
             sudo rm -rf ~/work ~/semicolon_delimited_script
             mv ~/out/*.iso ~/releng
 
@@ -44,3 +44,35 @@ jobs:
           path: ISO.tar.zst
           if-no-files-found: error
           retention-days: 5
+
+  distribute_iso:
+    runs-on: ubuntu-20.04
+    needs: buid_iso
+    steps:
+      - name: Download tarball
+        uses: actions/download-artifact@v2
+        with:
+          name: ISO-artifact
+
+      - name: "Untar files"
+        run: |
+          tar -I zstd -xvf ISO.tar.zst
+
+      - name: Create GitHub release
+        id: create-new-release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ github.run_number }}
+          release_name: Release ${{ github.run_number }}
+
+      # - name: Upload asset to GitHub release
+      #   uses: actions/upload-release-asset@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     upload_url: ${{ steps.create-new-release.outputs.upload_url }}
+      #     asset_path: ./site.zip
+      #     asset_name: site-v${{ github.run_number }}.zip
+      #     asset_content_type: application/zip
