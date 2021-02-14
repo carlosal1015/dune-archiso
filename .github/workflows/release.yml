@@ -22,7 +22,9 @@ jobs:
           git checkout
 
       - name: Look docker version
-        run: docker --version
+        shell: bash
+        run: |
+          docker --version
 
       - uses: addnab/docker-run-action@v1
         with:
@@ -30,4 +32,6 @@ jobs:
           options: -v ${{github.workspace}}:/iso
           shell: bash
           run: |
+            sudo pacman -Sqyu --noconfirm
             pacman --version
+            sudo --version
