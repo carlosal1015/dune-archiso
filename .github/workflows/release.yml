@@ -30,15 +30,15 @@ jobs:
             sudo pacman --noconfirm -Sqyu > /dev/null 2>&1
             sudo mkarchiso -v ~/releng
             sudo chown -R $(whoami):$(whoami) ~/
+            rm -rf ~/work
             mv ~/out/*.iso ~/releng
             ls -l ~/work ~/out
-            cat ~/releng/packages.x86_64
+            #cat ~/releng/packages.x86_64
             pacman --version
             sudo --version
 
       - name: "Tar files"
         run: |
-          ls -R
           tar --zstd -cf ISO.tar.zst releng/*.iso
 
       - uses: actions/upload-artifact@v2
