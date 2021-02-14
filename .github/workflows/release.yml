@@ -30,8 +30,8 @@ jobs:
             sudo pacman --noconfirm -Sqyu > /dev/null 2>&1
             sudo mkarchiso -v ~/releng > /dev/null 2>&1
             ls -l ~/out
-            sudo chown -R $(whoami):$(whoami) ~/
-            chmod u+r ~/out/*.iso
+            sudo chown -R $(whoami):$(whoami) ~/out
+            chmod 777 ~/out/*.iso
             sudo rm -rf ~/work
             ls -l ~/out
             mv ~/out/*.iso ~/releng
