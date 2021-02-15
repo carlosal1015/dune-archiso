@@ -105,4 +105,12 @@ xfsprogs
 xl2tpd
 zsh
 
+# Dune-common dependencies
+base-devel
 git
+gcc-fortran
+cmake
+lapack
+#openblas-lapack
+tbb
+#dune-common
