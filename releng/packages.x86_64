@@ -29,6 +29,10 @@ xf86-video-nouveau
 xf86-video-vmware
 xf86-input-libinput
 mesa
+# Main packages
+xorg-server
+noto-fonts
+noto-fonts-cjk
 # Cyber packages
 cyber
 #cyber-calamares
