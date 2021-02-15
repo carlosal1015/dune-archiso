@@ -26,7 +26,6 @@ jobs:
           git clone -q --filter=blob:none --no-checkout --depth=1  --sparse $REPO .
           git sparse-checkout set releng
           git checkout
-          echo "TODAY=$(echo `date -u +'%Y.%m.%d'`)" >> $GITHUB_ENV
 
       - uses: addnab/docker-run-action@v1
         with:
@@ -65,6 +64,7 @@ jobs:
       - name: "Untar files"
         run: |
           tar -I zstd -xvf ISO.tar.zst
+          echo "TODAY=$(echo `date -u +'%Y.%m.%d'`)" >> $GITHUB_ENV
 
       - name: Create GitHub release
         id: create-new-release
