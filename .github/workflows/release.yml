@@ -11,12 +11,6 @@ jobs:
   buid_iso:
     runs-on: ubuntu-20.04
     steps:
-      - uses: szenius/set-timezone@v1.0
-        with:
-          timezoneLinux: "America/Lima"
-
-      # ln -s /usr/share/zoneinfo/America/Lima /etc/localtime
-
       - name: Partial Clone
         shell: bash
         run: |
@@ -56,6 +50,10 @@ jobs:
     runs-on: ubuntu-20.04
     needs: buid_iso
     steps:
+      - uses: szenius/set-timezone@v1.0
+        with:
+          timezoneLinux: "America/Lima"
+      # ln -s /usr/share/zoneinfo/America/Lima /etc/localtime
       - name: Download tarball
         uses: actions/download-artifact@v2
         with:
