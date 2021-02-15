@@ -80,8 +80,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          shell: bash
-          run: |
           upload_url: ${{ steps.create-new-release.outputs.upload_url }}
           asset_path: archlinux-${{ env.TODAY }}-x86_64.iso
           asset_name: archlinux-${{ env.TODAY }}-x86_64.iso
