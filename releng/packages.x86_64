@@ -9,11 +9,11 @@ linux-firmware
 #man-pages
 mkinitcpio
 mkinitcpio-archiso
-mkinitcpio-nfs-utils
-nbd
-nfs-utils
-nilfs-utils
-ntfs-3g
+#mkinitcpio-nfs-utils
+#nbd
+#nfs-utils
+#nilfs-utils
+#ntfs-3g
 openssh
 #openvpn
 #reflector
