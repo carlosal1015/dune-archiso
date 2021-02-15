@@ -11,9 +11,10 @@ jobs:
   buid_iso:
     runs-on: ubuntu-20.04
     steps:
-        - uses: szenius/set-timezone-action@v1.0
-          with:
-            timezoneLinux: "America/Lima"
+      - uses: szenius/set-timezone-action@v1.0
+        with:
+          timezoneLinux: "America/Lima"
+
       # ln -s /usr/share/zoneinfo/America/Lima /etc/localtime
 
       - name: Partial Clone
