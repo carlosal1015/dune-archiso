@@ -33,6 +33,7 @@ mesa
 xorg-server
 noto-fonts
 noto-fonts-cjk
+firefox
 # Cyber packages
 cyber
 #cyber-calamares
