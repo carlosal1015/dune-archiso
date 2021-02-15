@@ -14,7 +14,7 @@ nbd
 nfs-utils
 nilfs-utils
 ntfs-3g
-#openssh
+openssh
 #openvpn
 #reflector
 sudo
