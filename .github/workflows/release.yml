@@ -11,7 +11,7 @@ jobs:
   buid_iso:
     runs-on: ubuntu-20.04
     steps:
-      - uses: szenius/set-timezone-action@v1.0
+      - uses: szenius/set-timezone@v1.0
         with:
           timezoneLinux: "America/Lima"
 
