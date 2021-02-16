@@ -16,7 +16,7 @@ mkinitcpio-archiso
 #ntfs-3g
 openssh
 #openvpn
-#reflector
+reflector
 sudo
 syslinux
 #vim
@@ -42,6 +42,7 @@ neofetch
 gdm
 networkmanager
 pulseaudio
+pulseaudio-alsa
 open-vm-tools
 virtualbox-guest-utils
 gtkmm
@@ -50,7 +51,7 @@ pacman-mirrorlist
 # AUR
 #yay
 # Dune-common dependencies
-#base-devel
+base-devel
 git
 #gcc-fortran
 #cmake
