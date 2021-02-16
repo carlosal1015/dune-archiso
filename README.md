@@ -1,7 +1,7 @@
 <div align="center">
-  <img alt="Dune Numerics" height="124px" vspace="" hspace="25"
+  <img alt="Dune Numerics" height="100px" vspace="" hspace="10"
     src="https://dune-project.org/share/dune-logo.svg?sanitize=true">
-  <img alt="CyberOS" height="124px" vspace="" hspace="25"
+  <img alt="CyberOS" height="100px" vspace=""
     src="https://raw.githubusercontent.com/cyberos/cyberos.github.io/main/src/cyber-logo.svg?sanitize=true">
 </div>
 
@@ -21,7 +21,6 @@ function since that Archlinux switch from a Sun provided implementation to the
 package which causes issues.
 <b>Credits</b>: v2.7.1 <code>dune-common</code>'s maintainer from AUR.
 </sup>
-
 
 <p align="center">
   <a href="https://github.com/carlosal1015/dune-archiso/issues">
@@ -60,3 +59,5 @@ and <a href="https://archlinux.org">Arch Linux</a>.
 <br>
 <img alt="CyberOS" height="640px" src="https://raw.githubusercontent.com/cyberos/cyber-settings/main/screenshots/cyber-settings.png">
 </p>
+
+![](https://img.shields.io/static/v1.svg?label=Download%20now&message=🎲&color=black&logo=GitHub&logoColor=white&labelColor=black)

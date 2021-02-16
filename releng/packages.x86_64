@@ -16,7 +16,7 @@ mkinitcpio-archiso
 #ntfs-3g
 openssh
 #openvpn
-reflector
+#reflector
 sudo
 syslinux
 #vim
@@ -34,6 +34,7 @@ xorg-server
 noto-fonts
 noto-fonts-cjk
 firefox
+telegram-desktop
 # Cyber packages
 cyber
 cyber-calamares
@@ -49,6 +50,7 @@ gtkmm
 gtk2
 pacman-mirrorlist
 # AUR
+go
 #yay
 # Dune-common dependencies
 base-devel
