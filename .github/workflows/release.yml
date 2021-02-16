@@ -11,10 +11,6 @@ jobs:
   buid_iso:
     runs-on: ubuntu-20.04
     steps:
-      - uses: szenius/set-timezone@v1.0
-        with:
-          timezoneLinux: "America/Lima"
-      # ln -s /usr/share/zoneinfo/America/Lima /etc/localtime
       - name: Partial Clone
         shell: bash
         run: |
@@ -31,6 +27,7 @@ jobs:
           options: --privileged -v ${{github.workspace}}:/home/karliso/
           shell: bash
           run: |
+            ln -s /usr/share/zoneinfo/America/Lima /etc/localtime
             sudo pacman --noconfirm -Sqyu > /dev/null 2>&1
             sudo mkarchiso -v ~/releng > /dev/null 2>&1
             sudo pacman -Qtdq | xargs -r sudo pacman --noconfirm -Rcns > /dev/null 2>&1
