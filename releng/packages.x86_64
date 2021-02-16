@@ -36,7 +36,7 @@ noto-fonts-cjk
 firefox
 # Cyber packages
 cyber
-#cyber-calamares
+cyber-calamares
 # Extra packages
 neofetch
 gdm
@@ -47,6 +47,8 @@ virtualbox-guest-utils
 gtkmm
 gtk2
 pacman-mirrorlist
+# AUR
+#yay
 # Dune-common dependencies
 #base-devel
 #git
