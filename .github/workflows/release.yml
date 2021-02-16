@@ -49,7 +49,7 @@ jobs:
 
   distribute_iso:
     runs-on: ubuntu-20.04
-    needs: buid_iso
+    needs: build_iso
     steps:
       - name: Download tarball
         uses: actions/download-artifact@v2
