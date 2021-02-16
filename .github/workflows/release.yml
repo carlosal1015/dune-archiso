@@ -59,6 +59,7 @@ jobs:
       - name: Untar files
         run: |
           tar -I zstd -xvf ISO.tar.zst
+          ln -sf /usr/share/zoneinfo/America/Lima /etc/localtime
           echo "TODAY=$(echo `date +'%Y.%m.%d'`)" >> $GITHUB_ENV
 
       - name: Create GitHub release
