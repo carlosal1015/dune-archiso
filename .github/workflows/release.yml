@@ -59,10 +59,10 @@ jobs:
       - uses: szenius/set-timezone@v1.0
         with:
           timezoneLinux: "America/Lima"
-          shell: bash
-          run: |
-            tar -I zstd -xvf ISO.tar.zst
-            echo "TODAY=$(echo `date -u +'%Y.%m.%d'`)" >> $GITHUB_ENV
+        shell: bash
+        run: |
+          tar -I zstd -xvf ISO.tar.zst
+          echo "TODAY=$(echo `date -u +'%Y.%m.%d'`)" >> $GITHUB_ENV
 
       - name: Create GitHub release
         id: create-new-release
