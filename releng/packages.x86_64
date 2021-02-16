@@ -51,7 +51,7 @@ pacman-mirrorlist
 #yay
 # Dune-common dependencies
 #base-devel
-#git
+git
 #gcc-fortran
 #cmake
 #lapack
