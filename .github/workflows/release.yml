@@ -8,7 +8,7 @@ on:
     #   - releng/**
 
 jobs:
-  buid_iso:
+  build_iso:
     runs-on: ubuntu-20.04
     steps:
       - name: Partial Clone
@@ -29,7 +29,7 @@ jobs:
           run: |
             sudo ln -s /usr/share/zoneinfo/America/Lima /etc/localtime
             sudo pacman --noconfirm -Sqyu > /dev/null 2>&1
-            sudo mkarchiso -v ~/releng > /dev/null 2>&1
+            sudo mkarchiso -v ~/releng #> /dev/null 2>&1
             sudo pacman -Qtdq | xargs -r sudo pacman --noconfirm -Rcns > /dev/null 2>&1
             sudo chown -R $(whoami):$(whoami) ~/
             sudo chmod -R 707 ~/out/*.iso ~/
@@ -51,10 +51,6 @@ jobs:
     runs-on: ubuntu-20.04
     needs: buid_iso
     steps:
-      - uses: szenius/set-timezone@v1.0
-        with:
-          timezoneLinux: "America/Lima"
-
       - name: Download tarball
         uses: actions/download-artifact@v2
         with:
@@ -63,7 +59,7 @@ jobs:
       - name: Untar files
         run: |
           tar -I zstd -xvf ISO.tar.zst
-          echo "TODAY=$(echo `date -u +'%Y.%m.%d'`)" >> $GITHUB_ENV
+          echo "TODAY=$(echo `date +'%Y.%m.%d'`)" >> $GITHUB_ENV
 
       - name: Create GitHub release
         id: create-new-release
