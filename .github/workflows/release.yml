@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main
-    # paths:
-    #   - releng/**
+    paths:
+      - releng/**
 
 jobs:
   buid_iso:
@@ -27,9 +27,8 @@ jobs:
           options: --privileged -v ${{github.workspace}}:/home/karliso/
           shell: bash
           run: |
-            ln -s /usr/share/zoneinfo/America/Lima /etc/localtime
+            sudo ln -s /usr/share/zoneinfo/America/Lima /etc/localtime
             sudo pacman --noconfirm -Sqyu > /dev/null 2>&1
-            date
             sudo mkarchiso -v ~/releng > /dev/null 2>&1
             sudo pacman -Qtdq | xargs -r sudo pacman --noconfirm -Rcns > /dev/null 2>&1
             sudo chown -R $(whoami):$(whoami) ~/
