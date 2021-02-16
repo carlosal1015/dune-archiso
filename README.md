@@ -35,27 +35,16 @@ package which causes issues.
 
 ### Get The ISO
 
-You can either download already generated ISO file from any of them
+You can either download already generated ISO file from [![Download this iso from GitHub Releases](https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black.svg)](https://github.com/carlosal1015/dune-archiso/releases/latest/download/archlinux-2021.02.16-x86_64.iso) or [![Download this iso from SourceForge](https://img.shields.io/badge/Sourceforge-Download-orange?style=for-the-badge&logo=sourceforge)](https://sourceforge.net/projects/dune-archiso/files/latest/download).
 
 <p align="center">
-  <a href="https://sourceforge.net/projects/dune-archiso/files/latest/download" target="_blank">
-    <img alt="undefined" height="30px"
-      src="https://img.shields.io/badge/Sourceforge-Download-orange?style=for-the-badge&logo=sourceforge">
-  </a>
-  <a href="https://github.com/carlosal1015/dune-archiso/releases/latest/download/archlinux-2021.02.16-x86_64.iso"
-    target="_blank">
-    <img alt="" height="30px"
-      src="https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black.svg">
-  </a>
-</p>
-
-<p align="center">
-The main source code was taken from
-<a href="https://github.com/cyberos/cyberos-iso">this archiso profile</a>
-for <a href="https://cyberos.github.io">CyberOS</a>, a
-<a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg">linux distribution</a>
-built with <a href="https://doc.qt.io/qt-5/qtquick-index.html">Qt Quick</a>
-and <a href="https://archlinux.org">Arch Linux</a>.
-<br>
-<img alt="CyberOS" height="640px" src="https://raw.githubusercontent.com/cyberos/cyber-settings/main/screenshots/cyber-settings.png">
+  This source code was taken from
+  <a href="https://github.com/cyberos/cyberos-iso">this archiso profile</a>
+  for <a href="https://cyberos.github.io">CyberOS</a>, a
+  <a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg">linux distribution</a>
+  built with <a href="https://doc.qt.io/qt-5/qtquick-index.html">Qt Quick</a>
+  and <a href="https://archlinux.org">Arch Linux</a>.
+  <br>
+  <img alt="CyberOS" height="640px"
+    src="https://raw.githubusercontent.com/cyberos/cyber-settings/main/screenshots/cyber-settings.png">
 </p>
