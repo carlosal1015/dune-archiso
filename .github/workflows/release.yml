@@ -51,15 +51,16 @@ jobs:
     runs-on: ubuntu-20.04
     needs: buid_iso
     steps:
+      - uses: szenius/set-timezone@v1.0
+        with:
+          timezoneLinux: "America/Lima"
+
       - name: Download tarball
         uses: actions/download-artifact@v2
         with:
           name: ISO-artifact
 
-      - uses: szenius/set-timezone@v1.0
-        with:
-          timezoneLinux: "America/Lima"
-        shell: bash
+      - name: Untar files
         run: |
           tar -I zstd -xvf ISO.tar.zst
           echo "TODAY=$(echo `date -u +'%Y.%m.%d'`)" >> $GITHUB_ENV
