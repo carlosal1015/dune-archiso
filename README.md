@@ -60,4 +60,4 @@ and <a href="https://archlinux.org">Arch Linux</a>.
 <img alt="CyberOS" height="640px" src="https://raw.githubusercontent.com/cyberos/cyber-settings/main/screenshots/cyber-settings.png">
 </p>
 
-![](https://img.shields.io/static/v1.svg?label=Download%20now&message=🎲&color=black&logo=GitHub&logoColor=white&labelColor=black)
+![](https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black)
