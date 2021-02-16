@@ -45,7 +45,7 @@ You can either download already generated ISO file from any of them
   <a href="https://github.com/carlosal1015/dune-archiso/releases/latest/download/archlinux-2021.02.16-x86_64.iso"
     target="_blank">
     <img alt="" height="30px"
-      src="https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black">
+      src="https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black.svg">
   </a>
 </p>
 
@@ -59,5 +59,3 @@ and <a href="https://archlinux.org">Arch Linux</a>.
 <br>
 <img alt="CyberOS" height="640px" src="https://raw.githubusercontent.com/cyberos/cyber-settings/main/screenshots/cyber-settings.png">
 </p>
-
-![](https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black)
