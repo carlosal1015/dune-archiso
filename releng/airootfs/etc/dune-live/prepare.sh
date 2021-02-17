@@ -10,6 +10,7 @@ locale-gen
 
 ln -sf /usr/share/zoneinfo/America/Lima /etc/localtime
 
+#https://superuser.com/a/758464/912402
 xrandr --newmode "1920x1080"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
 xrandr --addmode Virtual1 1920x1080
 xrandr --output Virtual1 --mode 1920x1080
@@ -31,12 +32,13 @@ pacman -Rdd qt5-tools --noconfirm
 # echo "NoDisplay=true" >> /usr/share/applications/designer.desktop
 # echo "NoDisplay=true" >> /usr/share/applications/linguist.desktop
 # echo "NoDisplay=true" >> /usr/share/applications/qdbusviewer.desktop
-
+pacman -Rdd gnome-disk-utility --noconfirm
 #systemctl disable bluetooth.service
 #systemctl mask bluetooth.service
 systemctl disable accounts-daemon.service
 #mkdir /home/duneuser/dunerepo
 #repo-add 
-#git clone --filter=blob:none --depth=1 https://github.com/hlissner/doom-emacs.git /home/duneuser/emacs.d
-
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sudo -u duneuser zsh &&
+git clone --filter=blob:none --depth=1 https://github.com/hlissner/doom-emacs.git ~/.emacs.d &&
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended &&
+exit
