@@ -60,12 +60,12 @@ sudo -H -u duneuser bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmy
 sudo -H -u duneuser bash -c "git clone --filter=blob:none --depth=1 https://github.com/hlissner/doom-emacs.git ~/.emacs.d"
 sudo -H -u duneuser bash -c "echo 'export PATH=\$HOME/.emacs.d/bin:\$PATH' >>~/.zshrc"
 sudo -H -u duneuser bash -c "echo 'xrandr -s 1920x1080' >>~/.zshrc"
-sudo -H -u duneuser bash -c "mkdir -p ~/.packages && cd ~/.packages && curl -L -O https://aur.archlinux.org/cgit/aur.git/snapshot/yay-bin.tar.gz && tar -xvf yay-bin.tar.gz && cd yay-bin && makepkg && mv *.zst .. && cd .. && rm -rf yay-bin && sudo repo-add ./custom.db.tar.gz ./*"
+sudo -H -u duneuser bash -c "mkdir -p ~/.packages && cd ~/.packages && curl -L -O https://aur.archlinux.org/cgit/aur.git/snapshot/yay-bin.tar.gz && tar -xvf yay-bin.tar.gz && rm yay-bin.tar.gz && cd yay-bin && makepkg -s && mv *.zst .. && cd .. && rm -rf yay-bin && sudo repo-add ./custom.db.tar.gz ./*"
 
 sed -i 's/^#\[custom\]/\[custom\]/' /etc/pacman.conf
 sed -i 's/^#SigLevel = Optional TrustAll/SigLevel = Optional TrustAll/' /etc/pacman.conf
 sed -i 's/^#Server = file:\/\/\/home\/custompkgs/Server = file:\/\/\/home\/duneuser\/.packages/' /etc/pacman.conf
 #sed -i 's/custompkgs/duneuser\/.packages/g' /etc/pacman.conf
 
-pacman -Sy yay-bin --noconfirm
+pacman -S yay-bin --noconfirm
 #git clone aur:mypackage
