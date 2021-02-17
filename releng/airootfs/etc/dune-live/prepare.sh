@@ -27,6 +27,8 @@ ln -sf /usr/share/zoneinfo/America/Lima /etc/localtime
 # echo 'NoDisplay=true' >>/usr/share/applications/bssh.desktop
 # echo 'NoDisplay=true' >>/usr/share/applications/bvnc.desktop
 rm /usr/share/applications/avahi-discover.desktop
+rm /usr/share/applications/bssh.desktop
+rm /usr/share/applications/bvnc.desktop
 
 # pacman -Rdd v4l-utils --noconfirm
 # echo 'NoDisplay=true' >>/usr/share/applications/qv4l2.desktop
@@ -67,6 +69,6 @@ sed -i 's/^#SigLevel = Optional TrustAll/SigLevel = Optional TrustAll/' /etc/pac
 sed -i 's/^#Server = file:\/\/\/home\/custompkgs/Server = file:\/\/\/home\/duneuser\/.packages/' /etc/pacman.conf
 #sed -i 's/custompkgs/duneuser\/.packages/g' /etc/pacman.conf
 
-pacman -S yay-bin --noconfirm
+sudo -H -u duneuser bash -c "sudo pacman -Sy yay-bin --noconfirm"
 sudo -H -u duneuser bash -c "yay whatsdesk-bin zoom emacs-lucid --noconfirm"
 #git clone aur:mypackage

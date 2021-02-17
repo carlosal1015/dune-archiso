@@ -103,12 +103,9 @@ virtualbox-guest-utils
 gtkmm
 gtk2
 pacman-mirrorlist
-#zathura
-#obs-studio
+zathura
+obs-studio
 # AUR
-#whatsdesk-bin
-#zoom
-#emacs-lucid
 # Dune-common dependencies
 base-devel
 git
