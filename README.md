@@ -2,7 +2,7 @@
   <img alt="Dune Numerics" height="100px" vspace="" hspace="10"
     src="https://dune-project.org/share/dune-logo.svg?sanitize=true">
   <img alt="CyberOS" height="100px" vspace=""
-    src="https://raw.githubusercontent.com/cyberos/cyberos.github.io/main/src/cyber-logo.svg?sanitize=true">
+    src="https://raw.githubusercontent.com/cyberos/cyberos.github.io/main/src/images/cyber-logo.svg?sanitize=true">
 </div>
 
 <h1 align="center">
@@ -47,6 +47,8 @@ You can either download already generated ISO file from [![Download this iso fro
     and <a href="https://archlinux.org">Arch Linux</a>.
   </blockquote>
   <br>
+  <img alt="CyberOS" height="640px"
+  src=https://raw.githubusercontent.com/cyberos/cyberos.github.io/main/src/images/preview_dark.png>
   <img alt="CyberOS" height="640px"
     src="https://raw.githubusercontent.com/cyberos/cyber-settings/main/screenshots/cyber-settings.png">
 </p>
