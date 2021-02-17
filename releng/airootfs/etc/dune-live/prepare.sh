@@ -24,28 +24,28 @@ ln -sf /usr/share/zoneinfo/America/Lima /etc/localtime
 # Force remove package with pacman https://unix.stackexchange.com/a/10179/292992
 
 # pacman -Rdd avahi --noconfirm
-echo 'NoDisplay=true' >>/usr/share/applications/bssh.desktop
-echo 'NoDisplay=true' >>/usr/share/applications/bvnc.desktop
-# rm /usr/share/applications/avahi-discover.desktop
+# echo 'NoDisplay=true' >>/usr/share/applications/bssh.desktop
+# echo 'NoDisplay=true' >>/usr/share/applications/bvnc.desktop
+rm /usr/share/applications/avahi-discover.desktop
 
 # pacman -Rdd v4l-utils --noconfirm
-echo 'NoDisplay=true' >>/usr/share/applications/qv4l2.desktop
-echo 'NoDisplay=true' >>/usr/share/applications/qvidcap.desktop
-# rm /usr/share/applications/qv4l2.desktop
-# rm /usr/share/applications/qvidcap.desktop
+# echo 'NoDisplay=true' >>/usr/share/applications/qv4l2.desktop
+# echo 'NoDisplay=true' >>/usr/share/applications/qvidcap.desktop
+rm /usr/share/applications/qv4l2.desktop
+rm /usr/share/applications/qvidcap.desktop
 
 # pacman -Rdd qt5-tools --noconfirm
-echo 'NoDisplay=true' >>/usr/share/applications/assistant.desktop
-echo 'NoDisplay=true' >>/usr/share/applications/designer.desktop
-echo 'NoDisplay=true' >>/usr/share/applications/linguist.desktop
-echo 'NoDisplay=true' >>/usr/share/applications/qdbusviewer.desktop
-# rm /usr/share/applications/assistant.desktop
-# rm /usr/share/applications/designer.desktop
-# rm /usr/share/applications/linguist.desktop
-# rm /usr/share/applications/qdbusviewer.desktop
+# echo 'NoDisplay=true' >>/usr/share/applications/assistant.desktop
+# echo 'NoDisplay=true' >>/usr/share/applications/designer.desktop
+# echo 'NoDisplay=true' >>/usr/share/applications/linguist.desktop
+# echo 'NoDisplay=true' >>/usr/share/applications/qdbusviewer.desktop
+rm /usr/share/applications/assistant.desktop
+rm /usr/share/applications/designer.desktop
+rm /usr/share/applications/linguist.desktop
+rm /usr/share/applications/qdbusviewer.desktop
 
-echo 'NoDisplay=true' >>/usr/share/applications/nm-connection-editor.desktop
-# rm /usr/share/applications/nm-connection-editor.desktop
+# echo 'NoDisplay=true' >>/usr/share/applications/nm-connection-editor.desktop
+rm /usr/share/applications/nm-connection-editor.desktop
 
 pacman -Rdd gnome-disk-utility --noconfirm
 #systemctl disable bluetooth.service
@@ -68,4 +68,5 @@ sed -i 's/^#Server = file:\/\/\/home\/custompkgs/Server = file:\/\/\/home\/duneu
 #sed -i 's/custompkgs/duneuser\/.packages/g' /etc/pacman.conf
 
 pacman -S yay-bin --noconfirm
+sudo -H -u duneuser bash -c "yay whatsdesk-bin zoom emacs-lucid --noconfirm"
 #git clone aur:mypackage
