@@ -51,6 +51,6 @@ You can either download already generated ISO file from [![Download this iso fro
 </p>
   <img alt="CyberOS Desktop" height="480px"
     src="https://raw.githubusercontent.com/cyberos/cyberos.github.io/main/src/images/preview_dark.png">
-  <img alt="CyberOS Settings" height="540px"
+  <img alt="CyberOS Settings" height="600px"
     src="https://raw.githubusercontent.com/cyberos/cyber-settings/main/screenshots/cyber-settings.png">
 </div>
