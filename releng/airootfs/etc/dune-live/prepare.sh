@@ -18,30 +18,30 @@ ln -sf /usr/share/zoneinfo/America/Lima /etc/localtime
 #xrandr --output VGA1 --mode 1920x1080 --rate 60 --brightness 0.1 --output HDMI1 --mode 1920x1080 --rate 60 --brightness 0.1
 # Nice help https://bbs.archlinux.org/viewtopic.php?id=243875
 # https://wiki.archlinux.org/index.php/desktop_entries#Hide_desktop_entries
+
+# Force remove package with pacman https://unix.stackexchange.com/a/10179/292992
 #pacman -Rdd avahi --noconfirm
-echo "NoDisplay=true" >> /usr/share/applications/avahi-discover.desktop
-echo "NoDisplay=true" >> /usr/share/applications/bssh.desktop
-echo "NoDisplay=true" >> /usr/share/applications/bvnc.desktop
+echo "NoDisplay=true" >>/usr/share/applications/avahi-discover.desktop
+echo "NoDisplay=true" >>/usr/share/applications/bssh.desktop
+echo "NoDisplay=true" >>/usr/share/applications/bvnc.desktop
 
 #pacman -Rdd v4l-utils --noconfirm
-echo "NoDisplay=true" >> /usr/share/applications/qv4l2.desktop
-echo "NoDisplay=true" >> /usr/share/applications/qvidcap.desktop
+echo "NoDisplay=true" >>/usr/share/applications/qv4l2.desktop
+echo "NoDisplay=true" >>/usr/share/applications/qvidcap.desktop
 
 #pacman -Rdd qt5-tools --noconfirm
-echo "NoDisplay=true" >> /usr/share/applications/assistant.desktop
-echo "NoDisplay=true" >> /usr/share/applications/designer.desktop
-echo "NoDisplay=true" >> /usr/share/applications/linguist.desktop
-echo "NoDisplay=true" >> /usr/share/applications/qdbusviewer.desktop
+echo "NoDisplay=true" >>/usr/share/applications/assistant.desktop
+echo "NoDisplay=true" >>/usr/share/applications/designer.desktop
+echo "NoDisplay=true" >>/usr/share/applications/linguist.desktop
+echo "NoDisplay=true" >>/usr/share/applications/qdbusviewer.desktop
 
-#pacman -Rdd gnome-disk-utility --noconfirm
-echo "NoDisplay=true" >> /usr/share/applications/nm-connection-editor.desktop
+pacman -Rdd gnome-disk-utility --noconfirm
+echo "NoDisplay=true" >>/usr/share/applications/nm-connection-editor.desktop
 #systemctl disable bluetooth.service
 #systemctl mask bluetooth.service
 
 systemctl disable accounts-daemon.service
 #mkdir /home/duneuser/dunerepo
-#repo-add 
-su -u duneuser
-git clone --filter=blob:none --depth=1 https://github.com/hlissner/doom-emacs.git ~/.emacs.d
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-exit
+#repo-add
+sudo -H -u duneuser bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sudo -H -u duneuser bash -c "git clone --filter=blob:none --depth=1 https://github.com/hlissner/doom-emacs.git ~/.emacs.d"
