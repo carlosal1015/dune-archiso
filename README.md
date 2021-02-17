@@ -47,7 +47,6 @@ You can either download already generated ISO file from [![Download this iso fro
     built with <a href="https://doc.qt.io/qt-5/qtquick-index.html">Qt Quick</a>
     and <a href="https://archlinux.org">Arch Linux</a>.
   </blockquote>
-  <br>
 </p>
   <img alt="CyberOS Desktop" height="480px"
     src="https://raw.githubusercontent.com/cyberos/cyberos.github.io/main/src/images/preview_dark.png">
