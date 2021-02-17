@@ -20,7 +20,7 @@ openssh
 sudo
 syslinux
 #vim
-#zsh
+zsh
 # Drivers
 xf86-video-intel
 xf86-video-ati
