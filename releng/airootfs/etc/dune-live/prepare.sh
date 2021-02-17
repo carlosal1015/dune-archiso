@@ -5,7 +5,7 @@ pacman-key --init
 pacman-key --populate archlinux
 sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist
 
-sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
+sed -i 's/#\(es_PE\.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
 
 ln -sf /usr/share/zoneinfo/America/Lima /etc/localtime
