@@ -43,6 +43,9 @@ rm /usr/share/applications/nm-connection-editor.desktop
 
 systemctl disable accounts-daemon.service
 
+sudo -H -u duneuser bash -c "echo '[url "ssh://aur@aur.archlinux.org/"]' >>~/.gitconfig"
+sudo -H -u duneuser bash -c "echo '    insteadOf = "aur:"' >>~/.gitconfig"
+
 #https://askubuntu.com/a/294748/791670
 sudo -H -u duneuser bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 sudo -H -u duneuser bash -c "git clone --filter=blob:none --depth=1 https://github.com/hlissner/doom-emacs.git ~/.emacs.d"
@@ -59,3 +62,6 @@ sudo -H -u duneuser bash -c "sudo repo-add ./custom.db.tar.gz ./*"
 sed -i 's/^#\[custom\]/\[custom\]/' /etc/pacman.d/mirrorlist
 sed -i 's/^#SigLevel = Optional TrustAll/SigLevel = Optional TrustAll/' /etc/pacman.d/mirrorlist
 sed -i 's/^#Server = file:///home/custompkgs/Server = file:///home/duneuser/.packages' /etc/pacman.d/mirrorlist
+
+pacman -Sy yay-bin --noconfirm
+#git clone aur:mypackage
