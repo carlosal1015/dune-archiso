@@ -27,7 +27,7 @@ xf86-video-ati
 xf86-video-amdgpu
 xf86-video-nouveau
 xf86-video-vmware
-xf86-input-libinput
+#xf86-input-libinput
 mesa
 # Main packages
 xorg-server
@@ -35,8 +35,62 @@ noto-fonts
 noto-fonts-cjk
 firefox
 telegram-desktop
+#pyside2
+#qt5-3d
+qt5-base
+#qt5-charts
+#qt5-connectivity
+#qt5-datavis3d
+qt5-declarative
+#qt5-doc
+#qt5-examples
+#qt5-gamepad
+qt5-graphicaleffects
+qt5-imageformats
+#qt5-location
+#qt5-lottie
+qt5-multimedia
+#qt5-networkauth
+#qt5-purchasing
+#qt5-quick3d
+qt5-quickcontrols
+qt5-quickcontrols2
+#qt5-quicktimeline
+#qt5-remoteobjects
+qt5-script
+#qt5-scxml
+qt5-sensors
+#qt5-serialbus
+#qt5-serialport
+qt5-speech
+qt5-svg
+qt5-tools
+#qt5-translations
+#qt5-virtualkeyboard
+qt5-wayland
+#qt5-webchannel
+#qt5-webengine
+#qt5-webglplugin
+#qt5-websockets
+#qt5-webview
+qt5-x11extras
+qt5-xmlpatterns
 # Cyber packages
-cyber
+#cyber-calculator
+#cyber-disk-usage
+cyber-dock
+cyber-fm
+cyber-icon-theme
+cyber-kwin-plugins
+cyber-launcher
+cyber-qt-plugins
+#cyber-recorder
+cyber-settings
+cyber-terminal
+cyber-wallpapers
+cyber-workspace
+libcyber-system
+meuikit
 cyber-calamares
 # Extra packages
 neofetch
@@ -49,9 +103,13 @@ virtualbox-guest-utils
 gtkmm
 gtk2
 pacman-mirrorlist
+#zathura
+#obs-studio
 # AUR
-go
-#yay
+#yay-bin
+#whatsdesk-bin
+#zoom
+#emacs-lucid
 # Dune-common dependencies
 base-devel
 git
@@ -60,5 +118,6 @@ git
 #lapack
 #openblas-lapack
 #tbb
+
 # Dune packages
 #dune-common
