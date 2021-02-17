@@ -70,5 +70,6 @@ sed -i 's/^#Server = file:\/\/\/home\/custompkgs/Server = file:\/\/\/home\/duneu
 #sed -i 's/custompkgs/duneuser\/.packages/g' /etc/pacman.conf
 
 sudo -H -u duneuser bash -c "sudo pacman -Sy yay-bin --noconfirm"
-sudo -H -u duneuser bash -c "yay -Sy whatsdesk-bin zoom visual-studio-code-bin --noconfirm"
+sudo -H -u duneuser bash -c "yay -Sy whatsdesk-bin zoom emacs-native-comp-git --noconfirm"
+#visual-studio-code-bin
 #git clone aur:mypackage

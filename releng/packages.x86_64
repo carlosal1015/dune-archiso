@@ -106,7 +106,7 @@ gtk2
 pacman-mirrorlist
 zathura
 obs-studio
-emacs
+#emacs
 # AUR
 # Dune-common dependencies
 base-devel
