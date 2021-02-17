@@ -65,7 +65,7 @@ sudo -H -u duneuser bash -c "mkdir -p ~/.packages && cd ~/.packages && curl -L -
 
 sed -i 's/^#\[custom\]/\[custom\]/' /etc/pacman.conf
 sed -i 's/^#SigLevel = Optional TrustAll/SigLevel = Optional TrustAll/' /etc/pacman.conf
-# sed -i 's/^#Server = file:///home/custompkgs/Server = file:///home/duneuser/.packages' /etc/pacman.conf
+sed -i 's/custompkgs/duneuser\/.packages/g' /etc/pacman.conf
 
-#pacman -Sy yay-bin --noconfirm
+pacman -Sy yay-bin --noconfirm
 #git clone aur:mypackage
