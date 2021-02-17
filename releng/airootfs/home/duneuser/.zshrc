@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/carlosal1015/.oh-my-zsh"
+export ZSH="/home/duneuser/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -100,3 +100,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Added by doom emacs
 #export PATH=$HOME/.emacs.d/bin:$PATH
+xrandr -s 1920x1080
