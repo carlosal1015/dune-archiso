@@ -54,12 +54,17 @@ systemctl disable accounts-daemon.service
 sudo -H -u duneuser bash -c 'echo [url \"ssh://aur@aur.archlinux.org/\"] >>~/.gitconfig'
 sudo -H -u duneuser bash -c "echo '    insteadOf = \"aur:\"' >>~/.gitconfig"
 
+sed -i 's/^#\[custom\]/\[custom\]/' /etc/pacman.conf
+sed -i 's/^#SigLevel = Optional TrustAll/SigLevel = Optional TrustAll/' /etc/pacman.conf
+sed -i 's/^#Server = file:\/\/\/home\/custompkgs/Server = file:\/\/\/home\/duneuser\/.packages/' /etc/pacman.conf
+
 #https://askubuntu.com/a/294748/791670
 sudo -H -u duneuser bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 sudo -H -u duneuser bash -c "git clone --filter=blob:none --depth=1 https://github.com/hlissner/doom-emacs.git ~/.emacs.d"
 sudo -H -u duneuser bash -c "echo 'export PATH=\$HOME/.emacs.d/bin:\$PATH' >>~/.zshrc"
 sudo -H -u duneuser bash -c "echo 'xrandr -s 1920x1080' >>~/.zshrc"
 sudo -H -u duneuser bash -c "mkdir -p ~/.packages && cd ~/.packages && curl -L -O https://aur.archlinux.org/cgit/aur.git/snapshot/yay-bin.tar.gz && tar -xvf yay-bin.tar.gz && rm *.tar.gz && cd yay-bin && makepkg && find . -type f ! -name '*.tar.zst' -delete && mv *tar.zst .. && cd .. && rm -rf yay-bin"
+sudo -H -u duneuser bash -c "cd ~/.packages && sudo repo-add ./custom.db.tar.gz ./*"
 pacman -Sy yay-bin --noconfirm
 
 sudo -H -u duneuser bash -c "cd ~/.packages && yay -G zoom whatsdesk-bin visual-studio-code-bin clion github-desktop-bin jitsi-meet-desktop-bin webex-teams brave-bin"
@@ -75,10 +80,6 @@ sudo -H -u duneuser bash -c "cd ~/.packages && cd webex-teams && makepkg && find
 sudo -H -u duneuser bash -c "cd ~/.packages && cd brave-bin && makepkg && find . -type f ! -name '*.tar.zst' -delete && mv *tar.zst .. && cd .. && rm -rf brave-bin"
 
 sudo -H -u duneuser bash -c "cd ~/.packages && sudo repo-add ./custom.db.tar.gz ./*"
-
-sed -i 's/^#\[custom\]/\[custom\]/' /etc/pacman.conf
-sed -i 's/^#SigLevel = Optional TrustAll/SigLevel = Optional TrustAll/' /etc/pacman.conf
-sed -i 's/^#Server = file:\/\/\/home\/custompkgs/Server = file:\/\/\/home\/duneuser\/.packages/' /etc/pacman.conf
 
 pacman -S zoom whatsdesk-bin visual-studio-code-bin clion github-desktop-bin jitsi-meet-desktop-bin webex-teams brave-bin --noconfirm
 # emacs-native-comp-git
