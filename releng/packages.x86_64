@@ -106,13 +106,17 @@ gtk2
 pacman-mirrorlist
 zathura
 obs-studio
-#emacs
+discord
+nextcloud-client
+fd
+ripgrep
+cifs-utils
 # AUR
 # Dune-common dependencies
 base-devel
 git
-#gcc-fortran
-#cmake
+gcc-fortran
+cmake
 #lapack
 #openblas-lapack
 #tbb
