@@ -111,6 +111,7 @@ nextcloud-client
 fd
 ripgrep
 cifs-utils
+emacs
 # AUR
 # Dune-common dependencies
 base-devel
