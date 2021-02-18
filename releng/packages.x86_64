@@ -113,6 +113,11 @@ ripgrep
 cifs-utils
 emacs
 # AUR
+clion
+visual-studio-code-bin
+whatsdesk-bin
+yay-bin
+zoom
 # Dune-common dependencies
 base-devel
 git
