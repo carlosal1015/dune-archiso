@@ -112,10 +112,12 @@ fd
 ripgrep
 cifs-utils
 emacs
+java-runtime-common
 # AUR
 clion
+clion-jre
 visual-studio-code-bin
-whatsdesk-bin
+#whatsdesk-bin
 yay-bin
 zoom
 # Dune-common dependencies

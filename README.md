@@ -55,3 +55,5 @@ You can either download already generated ISO file from
   <img alt="CyberOS Settings" height="600px"
     src="https://raw.githubusercontent.com/cyberos/cyber-settings/main/screenshots/cyber-settings.png">
 </div>
+
+[Some packages are from here](https://gitlab.com/carlosal1015/dune-archiso-repository).
