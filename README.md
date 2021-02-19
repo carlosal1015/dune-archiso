@@ -35,7 +35,9 @@ package which causes issues.
 
 ### Get The ISO
 
-You can either download already generated ISO file from [![Download this iso from GitHub Releases](https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black.svg)](https://github.com/carlosal1015/dune-archiso/releases/latest/download/archlinux-2021.02.16-x86_64.iso) or [![Download this iso from SourceForge](https://img.shields.io/badge/Sourceforge-Download-orange?style=for-the-badge&logo=sourceforge)](https://sourceforge.net/projects/dune-archiso/files/latest/download).
+You can either download already generated ISO file from
+[![Download this iso from SourceForge](https://img.shields.io/badge/Sourceforge-Download-orange?style=for-the-badge&logo=sourceforge)](https://sourceforge.net/projects/dune-archiso/files/latest/download).
+<!-- [![Download this iso from GitHub Releases](https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black.svg)](https://github.com/carlosal1015/dune-archiso/releases/latest/download/archlinux-2021.02.16-x86_64.iso) -->
 
 <div align="center">
 <p align="center">

@@ -47,39 +47,39 @@ jobs:
           if-no-files-found: error
           retention-days: 90
 
-  distribute_iso:
-    runs-on: ubuntu-20.04
-    needs: build_iso
-    steps:
-      - uses: szenius/set-timezone@v1.0
-        with:
-          timezoneLinux: "America/Lima"
+  # distribute_iso:
+  #   runs-on: ubuntu-20.04
+  #   needs: build_iso
+  #   steps:
+  #     - uses: szenius/set-timezone@v1.0
+  #       with:
+  #         timezoneLinux: "America/Lima"
 
-      - name: Download tarball
-        uses: actions/download-artifact@v2
-        with:
-          name: ISO-artifact
+  #     - name: Download tarball
+  #       uses: actions/download-artifact@v2
+  #       with:
+  #         name: ISO-artifact
 
-      - name: Untar files
-        run: |
-          tar -I zstd -xvf ISO.tar.zst
-          echo "TODAY=$(echo `date +'%Y.%m.%d'`)" >> $GITHUB_ENV
+  #     - name: Untar files
+  #       run: |
+  #         tar -I zstd -xvf ISO.tar.zst
+  #         echo "TODAY=$(echo `date +'%Y.%m.%d'`)" >> $GITHUB_ENV
 
-      - name: Create GitHub release
-        id: create-new-release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: v${{ github.run_number }}
-          release_name: Release ${{ github.run_number }}
+  #     - name: Create GitHub release
+  #       id: create-new-release
+  #       uses: actions/create-release@v1
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #       with:
+  #         tag_name: v${{ github.run_number }}
+  #         release_name: Release ${{ github.run_number }}
 
-      - name: Upload asset to GitHub release
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create-new-release.outputs.upload_url }}
-          asset_path: archlinux-${{ env.TODAY }}-x86_64.iso
-          asset_name: archlinux-${{ env.TODAY }}-x86_64.iso
-          asset_content_type: application/octet-stream
+  #     - name: Upload asset to GitHub release
+  #       uses: actions/upload-release-asset@v1
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #       with:
+  #         upload_url: ${{ steps.create-new-release.outputs.upload_url }}
+  #         asset_path: archlinux-${{ env.TODAY }}-x86_64.iso
+  #         asset_name: archlinux-${{ env.TODAY }}-x86_64.iso
+  #         asset_content_type: application/octet-stream
