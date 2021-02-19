@@ -114,10 +114,12 @@ cifs-utils
 emacs
 java-runtime-common
 # AUR
+brave-bin
 clion
-clion-jre
+jitsi-meet-desktop-bin
+openblas-lapack
 visual-studio-code-bin
-#whatsdesk-bin
+whatsdesk-bin
 yay-bin
 zoom
 # Dune-common dependencies
@@ -125,9 +127,12 @@ base-devel
 git
 gcc-fortran
 cmake
-#lapack
-#openblas-lapack
-#tbb
+tbb
 
 # Dune packages
-#dune-common
+dune-common
+dune-geometry
+dune-grid
+dune-grid-howto
+dune-istl
+dune-localfunctions

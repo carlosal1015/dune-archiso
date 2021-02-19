@@ -37,6 +37,8 @@ package which causes issues.
 
 You can either download already generated ISO file from
 [![Download this iso from SourceForge](https://img.shields.io/badge/Sourceforge-Download-orange?style=for-the-badge&logo=sourceforge)](https://sourceforge.net/projects/dune-archiso/files/latest/download).
+Some packages are from [here](https://carlosal1015.gitlab.io/dune-archiso-repository).
+
 <!-- [![Download this iso from GitHub Releases](https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black.svg)](https://github.com/carlosal1015/dune-archiso/releases/latest/download/archlinux-2021.02.16-x86_64.iso) -->
 
 <div align="center">
@@ -55,5 +57,3 @@ You can either download already generated ISO file from
   <img alt="CyberOS Settings" height="600px"
     src="https://raw.githubusercontent.com/cyberos/cyber-settings/main/screenshots/cyber-settings.png">
 </div>
-
-[Some packages are from here](https://gitlab.com/carlosal1015/dune-archiso-repository).

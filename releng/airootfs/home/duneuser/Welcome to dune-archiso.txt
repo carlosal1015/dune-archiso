@@ -1,0 +1,43 @@
+Welcome to dune-archiso!
+
+The Linux® distribution that you are on is called Arch Linux.
+
+This pre-built image already comes preloaded with the followings packages:
+
+(type in terminal: pacman -Q).
+
+Please enjoy learning with the dune modules. We are using version 2.7.1, see more
+
+(type in terminal: dunecontrol help).
+
+
+
+
+
+¡Bienvenido a dune-archiso!
+
+La distribución Linux® en el que estás se llama Arch Linux.
+
+Esta imagen prediseñada ya viene precargada con los siguientes paquetes:
+
+(escriba en la terminal: pacman -Q).
+
+Por favor disfrute aprendiendo con los módulos de dune. Estamos usando la versión 2.7.1, vea más
+
+(escriba en la terminal: dunecontrol help).
+
+
+
+
+
+Willkommen bei dune-archiso!
+
+Die Linux®-Distribution, auf der Sie sich befinden, heißt Arch Linux.
+
+Dieses vorgefertigte Image ist bereits mit den folgenden Paketen vorinstalliert:
+
+(Terminal betreten: pacman -Q).
+
+Bitte viel Spaß beim Lernen mit den Dünenmodulen. Wir verwenden Version 2.7.1, siehe mehr
+
+(Terminal betreten: dunecontrol help).
