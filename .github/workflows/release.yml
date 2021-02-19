@@ -29,7 +29,7 @@ jobs:
           run: |
             sudo ln -s /usr/share/zoneinfo/America/Lima /etc/localtime
             sudo pacman --noconfirm -Sqyu > /dev/null 2>&1
-            sudo mkarchiso -v ~/releng > /dev/null 2>&1
+            sudo mkarchiso -v ~/releng
             sudo pacman -Qtdq | xargs -r sudo pacman --noconfirm -Rcns > /dev/null 2>&1
             sudo chown -R $(whoami):$(whoami) ~/
             sudo chmod -R 707 ~/out/*.iso ~/
