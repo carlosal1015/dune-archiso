@@ -105,17 +105,26 @@ gtkmm
 gtk2
 pacman-mirrorlist
 zathura
+zathura-djvu
+zathura-pdf-mupdf
+zathura-ps
 obs-studio
 discord
 nextcloud-client
 fd
 ripgrep
 cifs-utils
+shellcheck
+discount
 emacs
 java-runtime-common
 # AUR
 brave-bin
 clion
+clion-cmake
+clion-gdb
+clion-jre
+clion-lldb
 jitsi-meet-desktop-bin
 openblas-lapack
 visual-studio-code-bin

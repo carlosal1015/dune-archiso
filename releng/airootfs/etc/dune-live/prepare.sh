@@ -59,6 +59,7 @@ systemctl disable accounts-daemon.service
 sudo -H -u duneuser bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 sudo -H -u duneuser bash -c "git clone --filter=blob:none --depth=1 https://github.com/hlissner/doom-emacs.git ~/.emacs.d"
 sudo -H -u duneuser bash -c "echo 'export PATH=\$HOME/.emacs.d/bin:\$PATH' >>~/.zshrc"
+sudo -H -u duneuser bash -c "~/.emacs.d/bin/doom -y install"
 sudo -H -u duneuser bash -c "echo 'xrandr -s 1920x1080' >>~/.zshrc"
 sudo -H -u duneuser bash -c "sudo mount -o remount,size=6G /run/archiso/cowspace"
 
