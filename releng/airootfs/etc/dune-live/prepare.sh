@@ -43,6 +43,8 @@ rm /usr/share/applications/designer.desktop
 rm /usr/share/applications/linguist.desktop
 rm /usr/share/applications/qdbusviewer.desktop
 
+# echo 'NoDisplay=true' >>/usr/share/applications/lstopo.desktop
+rm /usr/share/applications/lstopo.desktop
 # echo 'NoDisplay=true' >>/usr/share/applications/nm-connection-editor.desktop
 rm /usr/share/applications/nm-connection-editor.desktop
 
@@ -56,12 +58,10 @@ systemctl disable accounts-daemon.service
 # git clone aur:mypackage
 
 #https://askubuntu.com/a/294748/791670
+sudo -H -u duneuser bash -c "echo 'export PATH=\$HOME/.emacs.d/bin:\$PATH' >>~/.zshrc"
 sudo -H -u duneuser bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 sudo -H -u duneuser bash -c "git clone --filter=blob:none --depth=1 https://github.com/hlissner/doom-emacs.git ~/.emacs.d"
-sudo -H -u duneuser bash -c "echo 'export PATH=\$HOME/.emacs.d/bin:\$PATH' >>~/.zshrc"
 sudo -H -u duneuser bash -c "~/.emacs.d/bin/doom -y install"
-sudo -H -u duneuser bash -c "echo 'xrandr -s 1920x1080' >>~/.zshrc"
-sudo -H -u duneuser bash -c "sudo mount -o remount,size=6G /run/archiso/cowspace"
 
 # sed -i 's/^#\[custom\]/\[custom\]/' /etc/pacman.conf
 # sed -i 's/^#SigLevel = Optional TrustAll/SigLevel = Optional TrustAll/' /etc/pacman.conf

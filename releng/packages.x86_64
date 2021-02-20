@@ -117,7 +117,7 @@ cifs-utils
 shellcheck
 discount
 emacs
-java-runtime-common
+jre-openjdk
 # AUR
 brave-bin
 clion
@@ -125,6 +125,7 @@ clion-cmake
 clion-gdb
 clion-jre
 clion-lldb
+#imagine-git
 jitsi-meet-desktop-bin
 openblas-lapack
 visual-studio-code-bin

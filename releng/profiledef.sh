@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="archlinux"
+iso_name="dunearchiso"
 iso_label="ARCH_$(date +%Y%m)"
 iso_publisher="Dune Archiso <https://sourceforge.net/projects/dune-archiso>"
 iso_application="Dune Archiso Live/Rescue CD"

@@ -80,6 +80,6 @@ jobs:
   #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   #       with:
   #         upload_url: ${{ steps.create-new-release.outputs.upload_url }}
-  #         asset_path: archlinux-${{ env.TODAY }}-x86_64.iso
-  #         asset_name: archlinux-${{ env.TODAY }}-x86_64.iso
+  #         asset_path: dunearchiso-${{ env.TODAY }}-x86_64.iso
+  #         asset_name: dunearchiso-${{ env.TODAY }}-x86_64.iso
   #         asset_content_type: application/octet-stream
