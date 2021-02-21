@@ -47,6 +47,8 @@ rm /usr/share/applications/qdbusviewer.desktop
 rm /usr/share/applications/lstopo.desktop
 # echo 'NoDisplay=true' >>/usr/share/applications/nm-connection-editor.desktop
 rm /usr/share/applications/nm-connection-editor.desktop
+# echo 'NoDisplay=true' >>/usr/share/applications/electron.desktop
+rm /usr/share/applications/electron.desktop
 
 pacman -Rdd gnome-disk-utility --noconfirm
 #systemctl disable bluetooth.service

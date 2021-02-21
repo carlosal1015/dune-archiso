@@ -124,10 +124,11 @@ clion-cmake
 clion-gdb
 clion-jre
 clion-lldb
+libgccjit
 emacs-native-comp-git
+gconf
 imagine-git
 jitsi-meet-desktop
-openblas-lapack
 openboard
 visual-studio-code-bin
 yay-bin
