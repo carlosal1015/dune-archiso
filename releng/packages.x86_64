@@ -116,7 +116,6 @@ ripgrep
 cifs-utils
 shellcheck
 discount
-emacs
 jre-openjdk
 # AUR
 brave-bin
@@ -125,11 +124,12 @@ clion-cmake
 clion-gdb
 clion-jre
 clion-lldb
-#imagine-git
-jitsi-meet-desktop-bin
+emacs-native-comp-git
+imagine-git
+jitsi-meet-desktop
 openblas-lapack
+openboard
 visual-studio-code-bin
-whatsdesk-bin
 yay-bin
 zoom
 # Dune-common dependencies

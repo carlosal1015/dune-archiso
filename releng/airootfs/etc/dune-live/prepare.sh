@@ -60,6 +60,7 @@ systemctl disable accounts-daemon.service
 #https://askubuntu.com/a/294748/791670
 sudo -H -u duneuser bash -c "echo 'export PATH=\$HOME/.emacs.d/bin:\$PATH' >>~/.zshrc"
 sudo -H -u duneuser bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sudo -H -u duneuser bash -c "cd ~ && { curl -Ok https://www.math.tu-dresden.de/\~osander/research/sander-getting-started-with-dune-2.7.pdf ; cd -; }"
 sudo -H -u duneuser bash -c "git clone --filter=blob:none --depth=1 https://github.com/hlissner/doom-emacs.git ~/.emacs.d"
 sudo -H -u duneuser bash -c "~/.emacs.d/bin/doom -y install"
 
