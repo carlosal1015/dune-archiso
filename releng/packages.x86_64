@@ -135,7 +135,7 @@ yay-bin
 zoom
 # Dune-common dependencies
 base-devel
-git
+git-lfs
 gcc-fortran
 cmake
 tbb

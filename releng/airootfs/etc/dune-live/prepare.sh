@@ -4,10 +4,8 @@
 pacman-key --init
 pacman-key --populate archlinux
 sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist
-
 sed -i 's/#\(es_PE\.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
-
 ln -sf /usr/share/zoneinfo/America/Lima /etc/localtime
 
 # https://superuser.com/a/758464/912402
@@ -55,23 +53,30 @@ pacman -Rdd gnome-disk-utility --noconfirm
 #systemctl mask bluetooth.service
 systemctl disable accounts-daemon.service
 
-# sudo -H -u duneuser bash -c 'echo [url \"ssh://aur@aur.archlinux.org/\"] >>~/.gitconfig'
-# sudo -H -u duneuser bash -c "echo '    insteadOf = \"aur:\"' >>~/.gitconfig"
+sudo -H -u duneuser bash -c 'echo pull.ff=only >>~/.gitconfig'
+sudo -H -u duneuser bash -c 'echo credential.helper=cache --timeout=3600 >>~/.gitconfig'
+sudo -H -u duneuser bash -c 'echo user.email=duneuser@mail.com >>~/.gitconfig'
+sudo -H -u duneuser bash -c 'echo user.name=duneuser >>~/.gitconfig'
+sudo -H -u duneuser bash -c 'echo filter.lfs.clean=git-lfs clean -- %f >>~/.gitconfig'
+sudo -H -u duneuser bash -c 'echo filter.lfs.smudge=git-lfs smudge -- %f >>~/.gitconfig'
+sudo -H -u duneuser bash -c 'echo filter.lfs.process=git-lfs filter-process >>~/.gitconfig'
+sudo -H -u duneuser bash -c 'echo filter.lfs.required=true >>~/.gitconfig'
+sudo -H -u duneuser bash -c 'printf '[url "ssh://aur@aur.archlinux.org/"]\n' >>~/.gitconfig'
+sudo -H -u duneuser bash -c "printf '    insteadOf = "aur:"\n' >>~/.gitconfig"
 # git clone aur:mypackage
 
 #https://askubuntu.com/a/294748/791670
 
 sudo -H -u duneuser bash -c "sudo mount -o remount,size=6G /run/archiso/cowspace"
-xrandr -s 1920x1080
-sudo -H -u duneuser bash -c "git clone --filter=blob:none --depth=1 https://gitlab.dune-project.org/dune-course/iwr-course-2021.git ~/iwr-course-2021"
+sudo -H -u duneuser bash -c "xrandr -s 1920x1080"
+sudo -H -u duneuser bash -c "git lfs clone --filter=blob:none --depth=1 https://gitlab.dune-project.org/dune-course/iwr-course-2021.git ~/iwr-course-2021"
 sudo -H -u duneuser bash -c "cd ~ && { curl -Ok https://www.math.tu-dresden.de/\~osander/research/sander-getting-started-with-dune-2.7.pdf ; cd -; }"
-sudo -H -u duneuser bash -c "echo 'export PATH=\$HOME/.emacs.d/bin:\$PATH' >>~/.zshrc"
 sudo -H -u duneuser bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sudo -H -u duneuser bash -c "echo 'export PATH=\$HOME/.emacs.d/bin:\$PATH' >>~/.zshrc"
 sudo -H -u duneuser bash -c "git clone --filter=blob:none --depth=1 https://github.com/hlissner/doom-emacs.git ~/.emacs.d"
 sudo -H -u duneuser bash -c "~/.emacs.d/bin/doom -y install"
 
 # sed -i 's/^#\[custom\]/\[custom\]/' /etc/pacman.conf
 # sed -i 's/^#SigLevel = Optional TrustAll/SigLevel = Optional TrustAll/' /etc/pacman.conf
 # sed -i 's/^#Server = file:\/\/\/home\/custompkgs/Server = file:\/\/\/home\/duneuser\/.packages/' /etc/pacman.conf
-
 # sudo -H -u duneuser bash -c "cd ~/.packages && cd emacs-native-comp-git && makepkg && find . -type f ! -name '*.tar.zst' -delete && mv *tar.zst .. && cd .. && rm -rf emacs-native-comp-git"
