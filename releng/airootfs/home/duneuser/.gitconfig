@@ -1,0 +1,15 @@
+[pull]
+	ff = only
+[credential]
+	helper = cache --timeout=3600
+[user]
+	email = duneuser@mail.com
+	name = duneuser
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[url "ssh://aur@aur.archlinux.org/"]
+  insteadOf = "aur:"

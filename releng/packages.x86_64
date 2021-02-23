@@ -111,6 +111,7 @@ zathura-ps
 obs-studio
 discord
 nextcloud-client
+flameshot
 fd
 ripgrep
 cifs-utils
@@ -124,6 +125,7 @@ clion-cmake
 clion-gdb
 clion-jre
 clion-lldb
+#pycharm-edu
 libgccjit
 emacs-native-comp-git
 gconf
@@ -133,13 +135,8 @@ openboard
 visual-studio-code-bin
 yay-bin
 zoom
-# Dune-common dependencies
 base-devel
 git-lfs
-gcc-fortran
-cmake
-tbb
-
 # Dune packages
 dune-common
 dune-geometry
