@@ -117,6 +117,7 @@ ripgrep
 cifs-utils
 shellcheck
 discount
+parallel
 jre-openjdk
 # AUR
 brave-bin
@@ -137,6 +138,17 @@ yay-bin
 zoom
 base-devel
 git-lfs
+# Dune dependencies
+parmetis
+superlu
+psurface
+vc
+doxygen
+tbb
+cmake
+openblas-lapack
+gcc-fortran
+python-pip
 # Dune packages
 dune-common
 dune-geometry
@@ -144,3 +156,5 @@ dune-grid
 dune-grid-howto
 dune-istl
 dune-localfunctions
+dune-typetree
+dune-functions

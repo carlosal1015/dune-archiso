@@ -30,7 +30,6 @@ rm /usr/share/applications/bvnc.desktop
 # echo 'NoDisplay=true' >>/usr/share/applications/qvidcap.desktop
 rm /usr/share/applications/qv4l2.desktop
 rm /usr/share/applications/qvidcap.desktop
-
 # pacman -Rdd qt5-tools --noconfirm
 # echo 'NoDisplay=true' >>/usr/share/applications/assistant.desktop
 # echo 'NoDisplay=true' >>/usr/share/applications/designer.desktop
@@ -40,13 +39,14 @@ rm /usr/share/applications/assistant.desktop
 rm /usr/share/applications/designer.desktop
 rm /usr/share/applications/linguist.desktop
 rm /usr/share/applications/qdbusviewer.desktop
-
 # echo 'NoDisplay=true' >>/usr/share/applications/lstopo.desktop
 rm /usr/share/applications/lstopo.desktop
 # echo 'NoDisplay=true' >>/usr/share/applications/nm-connection-editor.desktop
 rm /usr/share/applications/nm-connection-editor.desktop
 # echo 'NoDisplay=true' >>/usr/share/applications/electron.desktop
 rm /usr/share/applications/electron.desktop
+# echo 'NoDisplay=true' >>/usr/share/applications/emacsclient.desktop
+rm /usr/share/applications/emacsclient.desktop
 
 pacman -Rdd gnome-disk-utility --noconfirm
 #systemctl disable bluetooth.service
@@ -56,7 +56,7 @@ systemctl disable accounts-daemon.service
 #https://askubuntu.com/a/294748/791670
 
 mount -o remount,size=6G /run/archiso/cowspace
-sudo -H -u duneuser -c 'xrandr -s 1920x1080'
+sudo -H -u duneuser zsh -c "xrandr -s 1920x1080"
 sudo -H -u duneuser bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 sudo -H -u duneuser bash -c "echo 'export PATH=\$HOME/.emacs.d/bin:\$PATH' >>~/.zshrc"
 sudo -H -u duneuser bash -c "cd ~ && { curl -Ok https://www.math.tu-dresden.de/\~osander/research/sander-getting-started-with-dune-2.7.pdf ; cd -; }"
