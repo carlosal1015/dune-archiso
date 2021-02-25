@@ -57,3 +57,17 @@ Some packages are from [here](https://carlosal1015.gitlab.io/dune-archiso-reposi
   <img alt="CyberOS Settings" height="600px"
     src="https://raw.githubusercontent.com/cyberos/cyber-settings/main/screenshots/cyber-settings.png">
 </div>
+
+<p align="center">
+  <a href="https://sourceforge.net/projects/dune-archiso/files/latest/download" target="_blank">
+    <img alt="undefined" height="30px"
+      src="https://img.shields.io/badge/Sourceforge-Download-orange?style=for-the-badge&logo=sourceforge">
+  </a>
+  <a href="https://nightly.link/carlosal1015/dune-archiso/workflows/release/main/ISO-artifact.zip"
+    target="_blank">
+    <img alt="" height="30px"
+      src="https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black.svg">
+  </a>
+</p>
+
+You can either download already generated ISO file from [![Download this iso from GitHub Releases](https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black.svg)](https://nightly.link/carlosal1015/dune-archiso/workflows/release/main/ISO-artifact.zip) or [![Download this iso from SourceForge](https://img.shields.io/badge/Sourceforge-Download-orange?style=for-the-badge&logo=sourceforge)](https://sourceforge.net/projects/dune-archiso/files/latest/download).

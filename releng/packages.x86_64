@@ -142,8 +142,12 @@ git-lfs
 parmetis
 superlu
 psurface
+suitesparse
+python-sphinx
 vc
 doxygen
+arpack
+arpackpp-git
 tbb
 cmake
 openblas-lapack

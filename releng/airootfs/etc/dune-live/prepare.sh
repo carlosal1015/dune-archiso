@@ -56,7 +56,7 @@ systemctl disable accounts-daemon.service
 #https://askubuntu.com/a/294748/791670
 
 mount -o remount,size=6G /run/archiso/cowspace
-sudo -H -u duneuser zsh -c "xrandr -s 1920x1080"
+
 sudo -H -u duneuser bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 sudo -H -u duneuser bash -c "echo 'export PATH=\$HOME/.emacs.d/bin:\$PATH' >>~/.zshrc"
 sudo -H -u duneuser bash -c "cd ~ && { curl -Ok https://www.math.tu-dresden.de/\~osander/research/sander-getting-started-with-dune-2.7.pdf ; cd -; }"
@@ -67,4 +67,5 @@ sudo -H -u duneuser bash -c "~/.emacs.d/bin/doom -y install"
 # sed -i 's/^#\[custom\]/\[custom\]/' /etc/pacman.conf
 # sed -i 's/^#SigLevel = Optional TrustAll/SigLevel = Optional TrustAll/' /etc/pacman.conf
 # sed -i 's/^#Server = file:\/\/\/home\/custompkgs/Server = file:\/\/\/home\/duneuser\/.packages/' /etc/pacman.conf
+
 # sudo -H -u duneuser bash -c "cd ~/.packages && cd emacs-native-comp-git && makepkg && find . -type f ! -name '*.tar.zst' -delete && mv *tar.zst .. && cd .. && rm -rf emacs-native-comp-git"
