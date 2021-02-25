@@ -134,7 +134,7 @@ imagine-git
 jitsi-meet-desktop
 openboard
 visual-studio-code-bin
-yay-bin
+yay
 zoom
 base-devel
 git-lfs
@@ -147,7 +147,7 @@ python-sphinx
 vc
 doxygen
 arpack
-arpackpp-git
+arpackcpp-git
 tbb
 cmake
 openblas-lapack
