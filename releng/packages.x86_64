@@ -135,7 +135,7 @@ jitsi-meet-desktop
 openboard
 visual-studio-code-bin
 yay
-zoom
+zoom-system-qt
 base-devel
 git-lfs
 screenkey
