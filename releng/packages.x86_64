@@ -139,6 +139,8 @@ zoom
 base-devel
 git-lfs
 screenkey
+scotch-git
+petsc
 # Dune dependencies
 alberta3
 parmetis
