@@ -26,7 +26,9 @@ jobs:
           REPO="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
           git config --global user.email github-actions@github.com
           git config --global user.name github-actions
-          git clone -q --filter=blob:none --no-checkout --depth=1 --sparse $REPO && cd ${GITHUB_REPOSITORY}
+          git clone -q --filter=blob:none --no-checkout --depth=1 --sparse $REPO
+          pwd && ls -l
+          cd dune-archiso
           git sparse-checkout set releng
           git checkout
 
