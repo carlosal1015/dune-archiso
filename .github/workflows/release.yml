@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main
-    paths:
-      - releng/**
+    # paths:
+    #   - releng/**
 
 jobs:
   build_iso:
@@ -16,7 +16,7 @@ jobs:
         with:
           root-reserve-mb: 512
           swap-size-mb: 1024
-          # remove-dotnet: 'true'
+          remove-dotnet: 'true'
           remove-android: 'true'
           remove-haskell: 'true'
 
