@@ -11,6 +11,14 @@ jobs:
   build_iso:
     runs-on: ubuntu-20.04
     steps:
+      - name: Maximize build space
+        uses: easimon/maximize-build-space@master
+        with:
+          root-reserve-mb: 512
+          swap-size-mb: 1024
+          remove-dotnet: "true"
+          remove-android: "true"
+
       - name: Partial Clone
         shell: bash
         run: |
