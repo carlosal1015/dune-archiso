@@ -5,8 +5,8 @@ base
 #intel-ucode
 linux
 linux-firmware
-#man-db
-#man-pages
+man-db
+man-pages
 mkinitcpio
 mkinitcpio-archiso
 #mkinitcpio-nfs-utils
@@ -138,7 +138,9 @@ yay
 zoom
 base-devel
 git-lfs
+screenkey
 # Dune dependencies
+alberta3
 parmetis
 superlu
 psurface
