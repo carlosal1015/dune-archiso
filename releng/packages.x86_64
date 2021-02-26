@@ -21,6 +21,7 @@ sudo
 syslinux
 vim
 zsh
+zsh-syntax-highlighting
 # Drivers
 xf86-video-intel
 xf86-video-ati
@@ -151,7 +152,7 @@ python-sphinx
 vc
 doxygen
 arpack
-arpackcpp-git
+arpackpp-git
 tbb
 cmake
 openblas-lapack
