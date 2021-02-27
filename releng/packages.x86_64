@@ -132,11 +132,11 @@ libgccjit
 emacs-native-comp-git
 gconf
 imagine-git
-jitsi-meet-desktop
+#jitsi-meet-desktop
 openboard
 visual-studio-code-bin
 yay
-zoom-system-qt
+#zoom-system-qt
 base-devel
 git-lfs
 screenkey

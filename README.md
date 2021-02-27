@@ -19,7 +19,11 @@
 function since that Archlinux switch from a Sun provided implementation to the
 <a href="https://archlinux.org/packages/core/x86_64/libtirpc"><code>libtirpc</code></a>
 package which causes issues.
-<b>Credits</b>: v2.7.1 <code>dune-common</code>'s maintainer from AUR.
+<b>Credits</b>: v2.7.1 <code>dune-common</code>'s
+<a href="https://aur.archlinux.org/packages/?K=PrinceMachiavell&SeB=m">maintainer</a>
+from AUR.
+<br>
+** More news soon! We succesfully compiled the uggrid module!
 </sup>
 
 <p align="center">
@@ -36,7 +40,20 @@ package which causes issues.
 ### Get The ISO
 
 You can either download already generated ISO file from
-[![Download this iso from SourceForge](https://img.shields.io/badge/Sourceforge-Download-orange?style=for-the-badge&logo=sourceforge)](https://sourceforge.net/projects/dune-archiso/files/latest/download).
+
+<p align="center">
+  <a href="https://sourceforge.net/projects/dune-archiso/files/latest/download" target="_blank">
+    <img style="vertical-align:middle" alt="Sourceforge" height="30px"
+      src="https://img.shields.io/badge/Sourceforge-Download-orange?style=for-the-badge&logo=sourceforge">
+  </a>
+  or
+  <a href="https://nightly.link/carlosal1015/dune-archiso/workflows/release/main/ISO-artifact.zip"
+    target="_blank">
+    <img style="vertical-align:middle" alt="GitHub" height="30px"
+      src="https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black.svg">
+  </a>.
+</p>
+
 Some packages are from [here](https://carlosal1015.gitlab.io/dune-archiso-repository).
 
 <!-- [![Download this iso from GitHub Releases](https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black.svg)](https://github.com/carlosal1015/dune-archiso/releases/latest/download/archlinux-2021.02.16-x86_64.iso) -->
@@ -57,17 +74,3 @@ Some packages are from [here](https://carlosal1015.gitlab.io/dune-archiso-reposi
   <img alt="CyberOS Settings" height="600px"
     src="https://raw.githubusercontent.com/cyberos/cyber-settings/main/screenshots/cyber-settings.png">
 </div>
-
-<p align="center">
-  <a href="https://sourceforge.net/projects/dune-archiso/files/latest/download" target="_blank">
-    <img alt="undefined" height="30px"
-      src="https://img.shields.io/badge/Sourceforge-Download-orange?style=for-the-badge&logo=sourceforge">
-  </a>
-  <a href="https://nightly.link/carlosal1015/dune-archiso/workflows/release/main/ISO-artifact.zip"
-    target="_blank">
-    <img alt="" height="30px"
-      src="https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black.svg">
-  </a>
-</p>
-
-You can either download already generated ISO file from [![Download this iso from GitHub Releases](https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black.svg)](https://nightly.link/carlosal1015/dune-archiso/workflows/release/main/ISO-artifact.zip) or [![Download this iso from SourceForge](https://img.shields.io/badge/Sourceforge-Download-orange?style=for-the-badge&logo=sourceforge)](https://sourceforge.net/projects/dune-archiso/files/latest/download).
