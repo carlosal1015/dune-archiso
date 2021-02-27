@@ -165,6 +165,7 @@ dune-grid
 dune-grid-howto
 dune-istl
 dune-localfunctions
+dune-uggrid
 dune-typetree
 dune-functions
 dune-alugrid
