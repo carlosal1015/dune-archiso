@@ -132,11 +132,10 @@ libgccjit
 emacs-native-comp-git
 gconf
 imagine-git
-#jitsi-meet-desktop
 openboard
 visual-studio-code-bin
 yay
-#zoom-system-qt
+paraview
 base-devel
 git-lfs
 screenkey
@@ -158,6 +157,8 @@ cmake
 openblas-lapack
 gcc-fortran
 python-pip
+python-matplotlib
+gmsh
 # Dune packages
 dune-common
 dune-geometry
