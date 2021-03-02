@@ -1,7 +1,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 #amd-ucode
-base
+cyberos-base
 #intel-ucode
 linux
 linux-firmware
@@ -26,8 +26,8 @@ zsh-syntax-highlighting
 xf86-video-intel
 xf86-video-ati
 xf86-video-amdgpu
-xf86-video-nouveau
-xf86-video-vmware
+#xf86-video-nouveau
+#xf86-video-vmware
 #xf86-input-libinput
 mesa
 # Main packages
@@ -101,8 +101,8 @@ gnome-keyring
 networkmanager
 pulseaudio
 pulseaudio-alsa
-open-vm-tools
-virtualbox-guest-utils
+#open-vm-tools
+#virtualbox-guest-utils
 gtkmm
 gtk2
 pacman-mirrorlist
