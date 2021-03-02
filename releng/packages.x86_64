@@ -97,6 +97,7 @@ cyber-calamares
 # Extra packages
 neofetch
 gdm
+gnome-keyring
 networkmanager
 pulseaudio
 pulseaudio-alsa
@@ -110,7 +111,7 @@ zathura-djvu
 zathura-pdf-mupdf
 zathura-ps
 obs-studio
-discord
+#discord
 nextcloud-client
 flameshot
 fd
@@ -135,7 +136,7 @@ imagine-git
 openboard
 visual-studio-code-bin
 yay
-paraview
+#paraview
 base-devel
 git-lfs
 screenkey
