@@ -21,7 +21,7 @@ openssh
 #reflector
 sudo
 syslinux
-vim
+gvim
 zsh
 zsh-syntax-highlighting
 # Drivers
