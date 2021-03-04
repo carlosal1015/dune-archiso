@@ -7,6 +7,8 @@ linux
 linux-firmware
 man-db
 man-pages
+#manpages-es
+#manpages-es-extra
 mkinitcpio
 mkinitcpio-archiso
 #mkinitcpio-nfs-utils
@@ -111,7 +113,7 @@ zathura
 zathura-djvu
 zathura-pdf-mupdf
 zathura-ps
-obs-studio
+#obs-studio
 #discord
 nextcloud-client
 flameshot
@@ -123,7 +125,6 @@ discount
 parallel
 jre-openjdk
 # AUR
-brave-bin
 clion
 clion-cmake
 clion-gdb
@@ -134,10 +135,11 @@ libgccjit
 emacs-native-comp-git
 gconf
 imagine-git
+google-chrome
 openboard
 visual-studio-code-bin
 yay
-#paraview
+paraview-opt
 base-devel
 git-lfs
 screenkey
@@ -160,6 +162,8 @@ openblas-lapack
 gcc-fortran
 python-pip
 python-matplotlib
+ann
+voro++
 gmsh
 # Dune packages
 dune-common
