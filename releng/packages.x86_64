@@ -7,8 +7,8 @@ linux
 linux-firmware
 man-db
 man-pages
-#manpages-es
-#manpages-es-extra
+manpages-es
+manpages-es-extra
 mkinitcpio
 mkinitcpio-archiso
 #mkinitcpio-nfs-utils
@@ -147,9 +147,9 @@ scotch-git
 petsc
 # Dune dependencies
 alberta3
-#parmetis
+parmetis
 superlu
-#psurface
+psurface
 suitesparse
 python-sphinx
 vc
