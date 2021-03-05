@@ -23,6 +23,7 @@ sudo
 syslinux
 gvim
 zsh
+zsh-completions
 zsh-syntax-highlighting
 # Drivers
 xf86-video-intel
@@ -37,6 +38,7 @@ mesa
 xorg-server
 noto-fonts
 noto-fonts-cjk
+noto-fonts-emoji
 firefox
 telegram-desktop
 signal-desktop
