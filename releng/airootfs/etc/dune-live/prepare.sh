@@ -49,8 +49,8 @@ rm /usr/share/applications/electron.desktop
 rm /usr/share/applications/emacsclient.desktop
 # echo 'NoDisplay=true' >>/usr/share/applications/fluid.desktop
 rm /usr/share/applications/fluid.desktop
-# # echo 'NoDisplay=true' >>/usr/share/applications/vim.desktop
-# rm /usr/share/applications/vim.desktop
+# echo 'NoDisplay=true' >>/usr/share/applications/vim.desktop
+rm /usr/share/applications/vim.desktop
 
 pacman -Rdd gnome-disk-utility --noconfirm
 #systemctl disable bluetooth.service
@@ -59,14 +59,14 @@ systemctl disable accounts-daemon.service
 # git clone aur:mypackage
 #https://askubuntu.com/a/294748/791670
 
-mount -o remount,size=7G /run/archiso/cowspace
+mount -o remount,size=8G /run/archiso/cowspace
 
 # sudo -H -u duneuser bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 # sudo -H -u duneuser bash -c "echo 'export PATH=\$HOME/.emacs.d/bin:\$PATH' >>~/.zshrc"
-sudo -H -u duneuser bash -c "chmod -R +x ~/.emacs.d/bin && ~/.emacs.d/bin/doom -y install"
 sudo -H -u duneuser bash -c "cd ~ && { curl -Ok https://www.math.tu-dresden.de/\~osander/research/sander-getting-started-with-dune-2.7.pdf ; cd -; }"
 sudo -H -u duneuser bash -c "cd ~ && { curl -O https://conan.iwr.uni-heidelberg.de/data/teaching/oopfsc_ws2020/slides.pdf ; cd -; }"
 sudo -H -u duneuser bash -c "git clone --filter=blob:none --depth=1 https://gitlab.dune-project.org/dune-course/iwr-course-2021.git ~/iwr-course-2021"
+sudo -H -u duneuser bash -c "chmod -R +x ~/.emacs.d/bin && ~/.emacs.d/bin/doom -y install"
 
 # sed -i 's/^#\[custom\]/\[custom\]/' /etc/pacman.conf
 # sed -i 's/^#SigLevel = Optional TrustAll/SigLevel = Optional TrustAll/' /etc/pacman.conf
