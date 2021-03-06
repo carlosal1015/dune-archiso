@@ -180,3 +180,6 @@ dune-typetree
 dune-functions
 dune-alugrid
 dune-pdelab
+dune-pdelab-tutorials
+texlive-bin
+texlive-core
