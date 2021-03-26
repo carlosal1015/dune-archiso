@@ -33,7 +33,7 @@ jobs:
       - uses: addnab/docker-run-action@v1
         with:
           image: registry.gitlab.com/dune-archiso/dune-archiso-docker:latest
-          options: --privileged -v ${{github.workspace}}:/home/karliso/
+          options: --privileged -v ${{github.workspace}}:/home/aur/
           shell: bash
           run: |
             sudo pacman --noconfirm -Sqyu archiso > /dev/null 2>&1
