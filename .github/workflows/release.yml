@@ -33,17 +33,16 @@ jobs:
       - uses: addnab/docker-run-action@v1
         with:
           image: registry.gitlab.com/dune-archiso/dune-archiso-docker:latest
-          options: --privileged -v ${{github.workspace}}:/home/aur/
+          options: --privileged -v ${{github.workspace}}:/home/root/
           shell: bash
           run: |
             pacman --noconfirm -Sqyu archiso > /dev/null 2>&1
-            ls /home/aur/dune-archiso/
-            mkarchiso -h
-            sudo mkarchiso -v ~/dune-archiso/releng
-            sudo pacman -Qtdq | xargs -r sudo pacman --noconfirm -Rcns > /dev/null 2>&1
-            sudo chown -R $(whoami):$(whoami) ~/
-            sudo chmod -R 707 ~/out/*.iso ~/
-            sudo rm -rf ~/work ~/semicolon_delimited_script
+            mkarchiso -v ~/dune-archiso/releng
+            pacman -Qtdq | xargs -r pacman --noconfirm -Rcns > /dev/null 2>&1
+            # sudo chown -R $(whoami):$(whoami) ~/
+            # sudo chmod -R 707 ~/out/*.iso ~/
+            ls -R ~/
+            rm -rf ~/work ~/semicolon_delimited_script
             mv ~/out/*.iso ~/
 
       - name: "Tar files"
