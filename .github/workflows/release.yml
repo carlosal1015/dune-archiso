@@ -32,11 +32,10 @@ jobs:
 
       - uses: addnab/docker-run-action@v1
         with:
-          image: efikarl/archiso:latest
+          image: registry.gitlab.com/dune-archiso/dune-archiso-docker:latest
           options: --privileged -v ${{github.workspace}}:/home/karliso/
           shell: bash
           run: |
-            sudo ln -s /usr/share/zoneinfo/America/Lima /etc/localtime
             sudo pacman --noconfirm -Sqyu > /dev/null 2>&1
             sudo mkarchiso -v ~/dune-archiso/releng
             sudo pacman -Qtdq | xargs -r sudo pacman --noconfirm -Rcns > /dev/null 2>&1
