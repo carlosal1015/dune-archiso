@@ -37,7 +37,8 @@ jobs:
           shell: bash
           run: |
             sudo pacman --noconfirm -Sqyu archiso > /dev/null 2>&1
-            ls -la /root/dune-archiso
+            whoami
+            sudo ls -la /root/dune-archiso
             mkarchiso -h
             sudo mkarchiso -v ~/dune-archiso/releng
             sudo pacman -Qtdq | xargs -r sudo pacman --noconfirm -Rcns > /dev/null 2>&1
