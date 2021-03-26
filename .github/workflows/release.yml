@@ -36,9 +36,8 @@ jobs:
           options: --privileged -v ${{github.workspace}}:/home/aur/
           shell: bash
           run: |
-            pwd
             sudo pacman --noconfirm -Sqyu archiso > /dev/null 2>&1
-            ls
+            cd && ls
             mkarchiso -h
             sudo mkarchiso -v ~/dune-archiso/releng
             sudo pacman -Qtdq | xargs -r sudo pacman --noconfirm -Rcns > /dev/null 2>&1
