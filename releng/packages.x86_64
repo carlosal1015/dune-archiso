@@ -99,6 +99,7 @@ cyber-workspace
 libcyber-system
 meuikit
 cyber-calamares
+cyber-meta
 # Extra packages
 neofetch
 gdm
