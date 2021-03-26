@@ -30,18 +30,17 @@ jobs:
           git sparse-checkout set releng
           git checkout
 
-      - uses: addnab/docker-run-action@v1
+      - uses: addnab/docker-run-action@v3
         with:
           image: registry.gitlab.com/dune-archiso/dune-archiso-docker:latest
-          options: --privileged -v ${{github.workspace}}:/home/root/
+          options: --privileged -v ${{github.workspace}}:/home/aur/
           shell: bash
           run: |
             pacman --noconfirm -Sqyu archiso > /dev/null 2>&1
-            mkarchiso -v ~/dune-archiso/releng
+            mkarchiso -v /home/aur/dune-archiso/releng
             pacman -Qtdq | xargs -r pacman --noconfirm -Rcns > /dev/null 2>&1
             # sudo chown -R $(whoami):$(whoami) ~/
             # sudo chmod -R 707 ~/out/*.iso ~/
-            ls -R ~/
             rm -rf ~/work ~/semicolon_delimited_script
             mv ~/out/*.iso ~/
 
