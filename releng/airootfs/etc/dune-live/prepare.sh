@@ -1,11 +1,11 @@
 #!/bin/bash
 # This script prepares the dune-archiso live environment
 # for installation.
-pacman-key --init
-pacman-key --populate archlinux
 pacman-key --recv-keys BE381BCAC6A66564D937B699B63C67A37C97B2D8
 pacman-key --finger BE381BCAC6A66564D937B699B63C67A37C97B2D8
 pacman-key --lsign-key BE381BCAC6A66564D937B699B63C67A37C97B2D8
+pacman-key --init
+pacman-key --populate archlinux
 
 sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist
 sed -i 's/#\(es_PE\.UTF-8\)/\1/' /etc/locale.gen

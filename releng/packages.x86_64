@@ -85,13 +85,14 @@ qt5-xmlpatterns
 # Cyber packages
 #cyber-calculator
 #cyber-disk-usage
+#cyber-recorder
+#cyber-meta
 cyber-dock
 cyber-fm
 cyber-icon-theme
 cyber-kwin-plugins
 cyber-launcher
 cyber-qt-plugins
-#cyber-recorder
 cyber-settings
 cyber-terminal
 cyber-wallpapers
@@ -99,14 +100,14 @@ cyber-workspace
 libcyber-system
 meuikit
 cyber-calamares
-#cyber-meta
-#cyber-install-scripts
-#cyberos-filesystem
+cyber-install-scripts
+cyberos-filesystem
 cyberos-keyring
 # Extra packages
 neofetch
-gdm
-gnome-keyring
+#gdm
+#gnome-shell
+#gnome-keyring
 networkmanager
 pulseaudio
 pulseaudio-alsa
@@ -147,7 +148,7 @@ openboard
 visual-studio-code-bin
 yay
 #paraview-opt
-#base-devel
+base-devel
 git-lfs
 screenkey
 scotch-git
