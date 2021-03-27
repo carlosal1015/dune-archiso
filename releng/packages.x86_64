@@ -1,7 +1,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 #amd-ucode
-#cyberos-base
+cyberos-base
 #intel-ucode
 linux
 linux-firmware
@@ -99,7 +99,7 @@ cyber-workspace
 libcyber-system
 meuikit
 cyber-calamares
-cyber-meta
+#cyber-meta
 #cyber-install-scripts
 #cyberos-filesystem
 cyberos-keyring
@@ -147,7 +147,7 @@ openboard
 visual-studio-code-bin
 yay
 #paraview-opt
-base-devel
+#base-devel
 git-lfs
 screenkey
 scotch-git
@@ -173,12 +173,12 @@ ann
 voro++
 gmsh
 # Dune packages
-dune-common
-dune-geometry
-dune-grid
-dune-grid-howto
-dune-istl
-dune-localfunctions
+#dune-common
+#dune-geometry
+#dune-grid
+#dune-grid-howto
+#dune-istl
+#dune-localfunctions
 #dune-uggrid
 #dune-typetree
 #dune-functions
