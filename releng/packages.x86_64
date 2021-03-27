@@ -1,7 +1,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 #amd-ucode
-cyberos-base
+#cyberos-base
 #intel-ucode
 linux
 linux-firmware
@@ -100,6 +100,9 @@ libcyber-system
 meuikit
 cyber-calamares
 cyber-meta
+#cyber-install-scripts
+#cyberos-filesystem
+cyberos-keyring
 # Extra packages
 neofetch
 gdm
