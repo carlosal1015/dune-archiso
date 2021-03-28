@@ -14,8 +14,8 @@ jobs:
       - name: Maximize build space
         uses: easimon/maximize-build-space@v4
         with:
-          # root-reserve-mb: 2048
-          # swap-size-mb: 1024
+          root-reserve-mb: 51200
+          swap-size-mb: 1024
           remove-dotnet: "true"
           remove-android: "true"
           remove-haskell: "true"
@@ -36,7 +36,7 @@ jobs:
           options: --privileged -v ${{github.workspace}}:/home/aur/
           shell: bash
           run: |
-            pacman --noconfirm -Sqyu archiso > /dev/null 2>&1
+            pacman --noconfirm -Sqyyu archiso > /dev/null 2>&1
             pacman-key --recv-keys BE381BCAC6A66564D937B699B63C67A37C97B2D8
             pacman-key --finger BE381BCAC6A66564D937B699B63C67A37C97B2D8
             pacman-key --lsign-key BE381BCAC6A66564D937B699B63C67A37C97B2D8
