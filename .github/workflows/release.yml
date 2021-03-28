@@ -14,7 +14,7 @@ jobs:
       - name: Maximize build space
         uses: easimon/maximize-build-space@v4
         with:
-          root-reserve-mb: 51200
+          root-reserve-mb: 81920
           swap-size-mb: 1024
           remove-dotnet: "true"
           remove-android: "true"
@@ -44,12 +44,13 @@ jobs:
             pacman -Qtdq | xargs -r pacman --noconfirm -Rcns > /dev/null 2>&1
             # sudo chown -R $(whoami):$(whoami) ~/
             # sudo chmod -R 707 ~/out/*.iso ~/
-            rm -rf ~/work ~/semicolon_delimited_script
-            mv ~/out/*.iso ~/
+            rm -rf /work #~/semicolon_delimited_script
+            ls -la /home/aur/
+            # mv /out/*.iso ~/
 
       - name: "Tar files"
         run: |
-          tar --zstd -cf ISO.tar.zst *.iso
+          tar --zstd -cf ISO.tar.zst /out/*.iso
 
       - uses: actions/upload-artifact@v2
         with:
