@@ -46,11 +46,13 @@ jobs:
             # sudo chmod -R 707 ~/out/*.iso ~/
             rm -rf /work #~/semicolon_delimited_script
             ls -la /home/aur/
-            # mv /out/*.iso ~/
+            mv /out/*.iso /home/aur/dune-archiso
 
       - name: "Tar files"
         run: |
-          tar --zstd -cf ISO.tar.zst /out/*.iso
+          ls -la
+          pwd
+          tar --zstd -cf ISO.tar.zst *.iso
 
       - uses: actions/upload-artifact@v2
         with:

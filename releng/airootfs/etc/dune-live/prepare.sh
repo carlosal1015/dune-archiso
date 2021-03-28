@@ -1,16 +1,18 @@
 #!/bin/bash
 # This script prepares the dune-archiso live environment
 # for installation.
-pacman-key --recv-keys BE381BCAC6A66564D937B699B63C67A37C97B2D8
-pacman-key --finger BE381BCAC6A66564D937B699B63C67A37C97B2D8
-pacman-key --lsign-key BE381BCAC6A66564D937B699B63C67A37C97B2D8
-pacman-key --init
-pacman-key --populate archlinux
 
 sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist
 sed -i 's/#\(es_PE\.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
 ln -sf /usr/share/zoneinfo/America/Lima /etc/localtime
+
+pacman-key --init
+pacman-key --populate archlinux
+pacman-key --recv-keys BE381BCAC6A66564D937B699B63C67A37C97B2D8
+pacman-key --finger BE381BCAC6A66564D937B699B63C67A37C97B2D8
+pacman-key --lsign-key BE381BCAC6A66564D937B699B63C67A37C97B2D8
+pacman-key --refresh-keys
 # https://superuser.com/a/758464/912402
 # xrandr --newmode "1920x1080"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
 # xrandr --addmode Virtual1 1920x1080
