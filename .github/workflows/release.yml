@@ -45,14 +45,14 @@ jobs:
             # sudo chown -R $(whoami):$(whoami) ~/
             # sudo chmod -R 707 ~/out/*.iso ~/
             rm -rf /work /home/aur/semicolon_delimited_script
-            ls -la /home/aur/dune-archiso
             mv /out/*.iso /home/aur/dune-archiso
+            ls -la /home/aur/dune-archiso
 
       - name: "Tar files"
         run: |
-          ls -lR ~/
+          ls -lR ~/work/dune-archiso/dune-archiso/dune-archiso
           pwd
-          tar --zstd -cf ISO.tar.zst ~/dune-archiso/*.iso
+          tar --zstd -cf ISO.tar.zst ~/work/dune-archiso/dune-archiso/dune-archiso/*.iso
 
       - uses: actions/upload-artifact@v2
         with:
