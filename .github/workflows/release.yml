@@ -44,9 +44,9 @@ jobs:
             pacman -Qtdq | xargs -r pacman --noconfirm -Rcns > /dev/null 2>&1
             # sudo chown -R $(whoami):$(whoami) ~/
             # sudo chmod -R 707 ~/out/*.iso ~/
-            rm -rf /work #~/semicolon_delimited_script
-            ls -la /home/aur/
-            mv /out/*.iso /home/aur/dune-archiso
+            rm -rf /work /home/aur/semicolon_delimited_script
+            ls -la /home/aur/dune-archiso
+            mv /out/*.iso /home/aur/dune-archiso/dune-archiso
 
       - name: "Tar files"
         run: |
