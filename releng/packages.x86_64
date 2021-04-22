@@ -141,20 +141,26 @@ clion-lldb
 libgccjit
 ttf-d2coding
 emacs-native-comp-git
+# arch4edu
 gconf
 imagine-git
 brave-bin
+# arch4edu
 openboard
 visual-studio-code-bin
+# arch4edu
 yay
 #paraview-opt
 base-devel
 git-lfs
 screenkey
-scotch-git
+# arch4edu
+scotch
+# arch4edu
 petsc
 # Dune dependencies
 alberta3
+# arch4edu
 parmetis
 superlu
 psurface
@@ -166,12 +172,16 @@ arpack
 arpackpp-git
 tbb
 cmake
+# arch4edu
 openblas-lapack
 gcc-fortran
 python-pip
 python-matplotlib
+# arch4edu
 ann
+# arch4edu
 voro++
+# arch4edu
 gmsh
 # Dune packages
 dune-common
