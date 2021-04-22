@@ -9,7 +9,13 @@ ln -sf /usr/share/zoneinfo/America/Lima /etc/localtime
 
 pacman-key --init
 pacman-key --populate archlinux
-pacman-key --populate cyberos
+# pacman-key --populate cyberos
+curl https://raw.githubusercontent.com/cyberos/cyberos-keyring/main/cyberos.gpg | gpg --import
+gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 5BC6FBBAB02C73E4724B2CFC8C43C00BA8F06ECA
+gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 2AA99AA4E2D6214E6EA01C9A4AF42916F6E5B1CF
+pacman-key --recv-keys 7931B6D628C8D3BA
+pacman-key --finger 7931B6D628C8D3BA
+pacman-key --lsign-key 7931B6D628C8D3BA
 # pacman-key --recv-keys BE381BCAC6A66564D937B699B63C67A37C97B2D8
 # pacman-key --finger BE381BCAC6A66564D937B699B63C67A37C97B2D8
 # pacman-key --lsign-key BE381BCAC6A66564D937B699B63C67A37C97B2D8
