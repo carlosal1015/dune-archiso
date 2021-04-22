@@ -1,8 +1,8 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 #amd-ucode
-cyberos-base
 #intel-ucode
+cyberos-base
 linux
 linux-firmware
 man-db
@@ -16,7 +16,7 @@ mkinitcpio-archiso
 #nfs-utils
 #nilfs-utils
 #ntfs-3g
-openssh
+#openssh
 #openvpn
 #reflector
 sudo
@@ -39,7 +39,6 @@ xorg-server
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
-firefox
 telegram-desktop
 signal-desktop
 #pyside2
@@ -122,7 +121,7 @@ zathura-pdf-mupdf
 zathura-ps
 #obs-studio
 #discord
-nextcloud-client
+#nextcloud-client
 flameshot
 fd
 ripgrep
@@ -144,13 +143,12 @@ emacs-native-comp-git
 # arch4edu
 gconf
 imagine-git
-brave-bin
 # arch4edu
 openboard
 visual-studio-code-bin
 # arch4edu
 yay
-#paraview-opt
+paraview-opt
 base-devel
 git-lfs
 screenkey
