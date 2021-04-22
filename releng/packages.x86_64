@@ -169,7 +169,7 @@ python-sphinx
 vc
 doxygen
 arpack
-arpackpp-git
+arpack++-git
 tbb
 cmake
 # arch4edu
