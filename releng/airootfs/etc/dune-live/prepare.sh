@@ -67,7 +67,7 @@ rm /usr/share/applications/emacsclient.desktop
 # echo 'NoDisplay=true' >>/usr/share/applications/fluid.desktop
 rm /usr/share/applications/fluid.desktop
 # echo 'NoDisplay=true' >>/usr/share/applications/vim.desktop
-# rm /usr/share/applications/vim.desktop
+rm /usr/share/applications/vim.desktop
 
 pacman -Rdd gnome-disk-utility --noconfirm
 #systemctl disable bluetooth.service
