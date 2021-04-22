@@ -21,7 +21,7 @@ mkinitcpio-archiso
 #reflector
 sudo
 syslinux
-#gvim
+vim
 zsh
 zsh-completions
 zsh-syntax-highlighting
@@ -195,3 +195,4 @@ dune-uggrid
 #dune-pdelab
 #dune-pdelab-tutorials
 texlive-core
+falkon
