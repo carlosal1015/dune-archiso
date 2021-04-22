@@ -21,7 +21,7 @@ mkinitcpio-archiso
 #reflector
 sudo
 syslinux
-gvim
+#gvim
 zsh
 zsh-completions
 zsh-syntax-highlighting
@@ -40,7 +40,7 @@ noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 telegram-desktop
-signal-desktop
+#signal-desktop
 #pyside2
 #qt5-3d
 qt5-base
@@ -112,8 +112,8 @@ pulseaudio
 pulseaudio-alsa
 #open-vm-tools
 #virtualbox-guest-utils
-gtkmm
-gtk2
+#gtkmm
+#gtk2
 pacman-mirrorlist
 zathura
 zathura-djvu
