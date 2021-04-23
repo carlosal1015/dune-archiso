@@ -129,6 +129,8 @@ cifs-utils
 shellcheck
 discount
 parallel
+glslang
+ttf-all-the-icons
 jre-openjdk
 # AUR
 clion
