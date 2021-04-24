@@ -27,11 +27,16 @@ zsh-completions
 zsh-syntax-highlighting
 # Drivers
 xf86-video-intel
-xf86-video-ati
-xf86-video-amdgpu
-#xf86-video-nouveau
+#xf86-video-ati
+#xf86-video-amdgpu
+# Driver nvidia open source
+xf86-video-nouveau
+nvidia
+lib32-nvidia-utils
 #xf86-video-vmware
 #xf86-input-libinput
+# For Hyper-V
+xf86-video-fbdev
 xorg-xrandr
 mesa
 # Main packages
