@@ -82,7 +82,7 @@ mount -o remount,size=8G /run/archiso/cowspace
 
 # sudo -H -u duneuser bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 # sudo -H -u duneuser bash -c "echo 'export PATH=\$HOME/.emacs.d/bin:\$PATH' >>~/.zshrc"
-sudo -H -u duneuser bash -c "cd ~ && { curl -Ok https://www.math.tu-dresden.de/\~osander/research/sander-getting-started-with-dune-2.7.pdf ; cd -; }"
+sudo -H -u duneuser bash -c "cd ~ && { curl -Ok https://tu-dresden.de/mn/math/numerik/sander/ressourcen/dateien/sander-getting-started-with-dune-2-7.pdf ; cd -; }"
 sudo -H -u duneuser bash -c "cd ~ && { curl -O https://conan.iwr.uni-heidelberg.de/data/teaching/oopfsc_ws2020/slides.pdf ; cd -; }"
 sudo -H -u duneuser bash -c "cd ~ && { curl -O https://arxiv.org/pdf/1807.05252.pdf ; cd -; }"
 sudo -H -u duneuser bash -c "git clone --filter=blob:none --depth=1 https://gitlab.dune-project.org/dune-course/iwr-course-2021.git ~/iwr-course-2021"
