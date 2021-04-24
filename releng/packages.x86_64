@@ -25,6 +25,7 @@ vim
 zsh
 zsh-completions
 zsh-syntax-highlighting
+broadcom-wl
 # Drivers
 xf86-video-intel
 #xf86-video-ati
