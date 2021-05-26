@@ -168,7 +168,7 @@ alberta3
 # arch4edu
 parmetis
 superlu
-psurface
+psurface-git
 suitesparse
 python-sphinx
 vc
@@ -187,17 +187,10 @@ voro++
 # arch4edu
 gmsh
 # Dune packages
-#dune-common
-#dune-geometry
-#dune-grid
-#dune-grid-howto
-#dune-istl
-#dune-localfunctions
-#dune-uggrid
-#dune-typetree
-#dune-functions
-#dune-alugrid
-#dune-pdelab
-#dune-pdelab-tutorials
+dune-core
+dune-staging
+dune-extensions
+dune-quality
+dune-pdelab-module
 texlive-core
 falkon
