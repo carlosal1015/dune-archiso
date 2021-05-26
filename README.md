@@ -2,13 +2,13 @@
   <img alt="Dune Numerics" height="100px" vspace="" hspace="10"
     src="https://dune-project.org/share/dune-logo.svg?sanitize=true">
   <img alt="CyberOS" height="100px" vspace=""
-    src="https://raw.githubusercontent.com/cyberos/cyberos.github.io/main/src/images/cyber-logo.svg?sanitize=true">
+    src="https://git.omame.tech/CyberOS/website-wip/raw/branch/master/src/assets/images/cyber-logo.svg?sanitize=true">
 </div>
 
 <h1 align="center">
   An <a href="https://gitlab.archlinux.org/archlinux/archiso">archiso</a>
-  <a href="https://github.com/cyberos/cyberos-iso">profile</a>
-  based on <a href="https://cyberos.github.io">CyberOS</a>
+  <a href="https://git.omame.tech/CyberOS/cyberos-iso">profile</a>
+  based on <a href="https://getcyberos.org">CyberOS</a>
   with
   <a href="https://aur.archlinux.org/packages/dune-common">Dune Numerics</a>
   <sup><a href="#fn1">*</a></sup>
@@ -62,15 +62,15 @@ Some packages are from [here](https://carlosal1015.gitlab.io/dune-archiso-reposi
 <p align="center">
   <blockquote>
     This source code was taken from
-    <a href="https://github.com/cyberos/cyberos-iso">this archiso profile</a>
-    for <a href="https://cyberos.github.io">CyberOS</a>, a
+    <a href="https://git.omame.tech/CyberOS/cyberos-iso">this archiso profile</a>
+    for <a href="https://getcyberos.org">CyberOS</a>, a
     <a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg">linux distribution</a>
     built with <a href="https://doc.qt.io/qt-5/qtquick-index.html">Qt Quick</a>
     and <a href="https://archlinux.org">Arch Linux</a>.
   </blockquote>
 </p>
   <img alt="CyberOS Desktop" height="480px"
-    src="https://raw.githubusercontent.com/cyberos/cyberos.github.io/main/src/images/preview_dark.png">
+    src="https://git.omame.tech/CyberOS/website-wip/raw/branch/master/src/assets/images/preview.png">
   <img alt="CyberOS Settings" height="600px"
-    src="https://raw.githubusercontent.com/cyberos/cyber-settings/main/screenshots/cyber-settings.png">
+    src="https://git.omame.tech/CyberOS/website-wip/raw/branch/master/src/assets/images/cyberosscreen.png">
 </div>
