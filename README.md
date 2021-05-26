@@ -10,7 +10,7 @@
   <a href="https://git.omame.tech/CyberOS/cyberos-iso">profile</a>
   based on <a href="https://getcyberos.org">CyberOS</a>
   with
-  <a href="https://aur.archlinux.org/packages/dune-common">Dune Numerics</a>
+  <a href="https://aur.archlinux.org/packages/dune-common">DUNE Numerics</a>
   <sup><a href="#fn1">*</a></sup>
 </h1>
 
