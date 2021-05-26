@@ -32,7 +32,7 @@ jobs:
 
       - uses: addnab/docker-run-action@v3
         with:
-          image: registry.gitlab.com/dune-archiso/dune-archiso-docker:latest
+          image: registry.gitlab.com/dune-archiso/images/dune-archiso-docker:latest
           options: --privileged -v ${{github.workspace}}:/home/aur/
           shell: bash
           run: |
