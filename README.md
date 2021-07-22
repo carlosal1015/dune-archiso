@@ -74,3 +74,5 @@ Some packages are from [here](https://carlosal1015.gitlab.io/dune-archiso-reposi
   <img alt="CyberOS Settings" height="600px"
     src="https://git.omame.tech/CyberOS/website-wip/raw/branch/master/src/assets/images/cyberosscreen.png">
 </div>
+
+> Since August 2021, you should expect a new release every first day of the month, like Arch Linux.

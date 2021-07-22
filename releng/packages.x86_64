@@ -7,8 +7,7 @@ linux
 linux-firmware
 man-db
 man-pages
-manpages-es
-manpages-es-extra
+man-pages-es
 mkinitcpio
 mkinitcpio-archiso
 #mkinitcpio-nfs-utils
@@ -146,9 +145,9 @@ clion-gdb
 clion-jre
 clion-lldb
 #pycharm-edu
-libgccjit
+#libgccjit
 ttf-d2coding
-emacs-native-comp-git
+emacs-git
 imagine-git
 # arch4edu
 gconf
@@ -161,10 +160,9 @@ git-lfs
 screenkey
 # arch4edu
 scotch
-# arch4edu
 petsc
 # Dune dependencies
-alberta3
+alberta
 # arch4edu
 parmetis
 superlu
@@ -182,9 +180,7 @@ python-pip
 python-matplotlib
 # arch4edu
 ann
-# arch4edu
 voro++
-# arch4edu
 gmsh
 # Dune packages
 dune-core
