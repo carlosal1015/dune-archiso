@@ -37,9 +37,10 @@ jobs:
           shell: bash
           run: |
             pacman --noconfirm -Sqyyu archiso > /dev/null 2>&1
-            pacman-key --recv-keys BE381BCAC6A66564D937B699B63C67A37C97B2D8
-            pacman-key --finger BE381BCAC6A66564D937B699B63C67A37C97B2D8
-            pacman-key --lsign-key BE381BCAC6A66564D937B699B63C67A37C97B2D8
+            # pacman-key --recv-keys BE381BCAC6A66564D937B699B63C67A37C97B2D8
+            # pacman-key --finger BE381BCAC6A66564D937B699B63C67A37C97B2D8
+            # pacman-key --lsign-key BE381BCAC6A66564D937B699B63C67A37C97B2D8
+            curl https://git.omame.tech/CyberOS/cyberos-keyring/raw/branch/master/cyberos.gpg | gpg --import
             mkarchiso -v /home/aur/dune-archiso/releng
             pacman -Qtdq | xargs -r pacman --noconfirm -Rcns > /dev/null 2>&1
             # sudo chown -R $(whoami):$(whoami) ~/
