@@ -36,11 +36,11 @@ jobs:
           options: --privileged -v ${{github.workspace}}:/home/aur/
           shell: bash
           run: |
-            sudo -u aur git clone --filter=blob:none --depth=1 https://git.omame.tech/CyberOS/cyberos-keyring.git
-            cd cyberos-keyring
+            sudo -u aur git clone --filter=blob:none --depth=1 https://git.omame.tech/CyberOS/cyberos-keyring.git /home/aur/cyberos-keyring
+            cd /home/aur/cyberos-keyring
             sudo -u aur makepkg -si --noconfirm
             cd ..
-            rm -rf cyberos-keyring
+            rm -rf /home/aur/cyberos-keyring
             # pacman-key --init
             # pacman-key --recv-keys BE381BCAC6A66564D937B699B63C67A37C97B2D8
             # pacman-key --finger BE381BCAC6A66564D937B699B63C67A37C97B2D8
