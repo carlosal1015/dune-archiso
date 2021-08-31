@@ -184,7 +184,7 @@ gmsh
 dune-core
 dune-staging
 dune-extensions
-dune-quality
+# dune-quality
 dune-pdelab-module
 python-dune-fem
 opm-material
