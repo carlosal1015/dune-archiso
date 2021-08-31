@@ -175,9 +175,7 @@ arpackpp
 cmake
 # arch4edu
 #openblas-lapack
-gcc-fortran
 python-pip
-python-matplotlib
 # arch4edu
 ann
 voro++
@@ -188,5 +186,8 @@ dune-staging
 dune-extensions
 dune-quality
 dune-pdelab-module
+python-dune-fem
+opm-material
+# dumux
 texlive-core
 falkon
