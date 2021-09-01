@@ -23,7 +23,7 @@ package which causes issues.
 <a href="https://aur.archlinux.org/packages/?K=PrinceMachiavell&SeB=m">maintainer</a>
 from AUR.
 <br>
-** More news soon! We succesfully compiled the uggrid module!
+** More news soon! We succesfully compiled the <code>dune-uggrid</code> module!
 </sup>
 
 <p align="center">
@@ -70,9 +70,9 @@ Some packages are from [here](https://carlosal1015.gitlab.io/dune-archiso-reposi
   </blockquote>
 </p>
   <img alt="CyberOS Desktop" height="480px"
-    src="https://git.omame.tech/CyberOS/website-wip/raw/branch/master/src/assets/images/preview.png">
+    src="https://git.omame.tech/CyberOS/cyberos.github.io/raw/branch/master/src/images/preview_dark.png">
   <img alt="CyberOS Settings" height="600px"
-    src="https://git.omame.tech/CyberOS/website-wip/raw/branch/master/src/assets/images/cyberosscreen.png">
+    src="https://git.omame.tech/CyberOS/cyberos.github.io/raw/branch/master/src/images/preview_light.png">
 </div>
 
-> Since August 2021, you should expect a new release every first day of the month, like Arch Linux.
+> Since September 2021, there will be a new release every first day of the month, like Arch Linux.
