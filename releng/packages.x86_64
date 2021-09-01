@@ -188,6 +188,6 @@ dune-extensions
 dune-pdelab-module
 python-dune-fem
 opm-material
-# dumux
+dumux
 texlive-core
 falkon
