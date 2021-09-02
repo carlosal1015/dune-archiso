@@ -35,6 +35,9 @@ from AUR.
   </a>
   <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/carlosal1015/dune-archiso">
   <img alt="Powered by Qt" src="https://forthebadge.com/images/badges/powered-by-qt.svg">
+  <a href="https://newreleases.io/sourceforge/dune-archiso">
+    <img alt="NewReleases" src="https://newreleases.io/badge.svg">
+  </a>
 </p>
 
 ### Get The ISO
