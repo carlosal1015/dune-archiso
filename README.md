@@ -54,7 +54,7 @@ You can either download already generated ISO file from
   </a>.
 </p>
 
-Some packages are from [here](https://carlosal1015.gitlab.io/dune-archiso-repository).
+Some packages are from [here](https://dune-archiso.gitlab.io/packages).
 
 <!-- [![Download this iso from GitHub Releases](https://img.shields.io/static/v1.svg?label=Download%20now&message=💿&color=black&logo=GitHub&logoColor=white&labelColor=black.svg)](https://github.com/carlosal1015/dune-archiso/releases/latest/download/archlinux-2021.02.16-x86_64.iso) -->
 
@@ -74,5 +74,28 @@ Some packages are from [here](https://carlosal1015.gitlab.io/dune-archiso-reposi
   <img alt="CyberOS Settings" height="600px"
     src="https://git.omame.tech/CyberOS/cyberos.github.io/raw/branch/master/src/images/preview_light.png">
 </div>
+
+### Check the integrity ISO image
+
+```console
+$ ls
+dunearchiso-2021.09.01-x86_64.iso  dunearchiso-2021.09.01-x86_64.iso.sha512sum
+```
+
+```console
+$ sha512sum -c dunearchiso-2021.09.01-x86_64.iso.sha512sum 
+dunearchiso-2021.09.01-x86_64.iso: OK
+```
+
+<!-- ```console
+$ gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 5BC6FBBAB02C73E4724B2CFC8C43C00BA8F06ECA
+gpg: key 8C43C00BA8F06ECA: "Carlos Aznarán <caznaranl@uni.pe>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+``` -->
+
+<!-- ```console
+$ gpg --verify dunearchiso-2021.09.01-x86_64.iso.sig
+``` -->
 
 > Since September 2021, there will be a new release every first day of the month, like Arch Linux.
