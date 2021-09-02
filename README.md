@@ -79,7 +79,7 @@ Some packages are from [here](https://dune-archiso.gitlab.io/packages).
 
 ```console
 $ ls
-dunearchiso-2021.09.01-x86_64.iso  dunearchiso-2021.09.01-x86_64.iso.sha512sum
+dunearchiso-2021.09.01-x86_64.iso  dunearchiso-2021.09.01-x86_64.iso.sha512sum  dunearchiso-2021.09.01-x86_64.iso.sig
 ```
 
 ```console
@@ -87,15 +87,22 @@ $ sha512sum -c dunearchiso-2021.09.01-x86_64.iso.sha512sum
 dunearchiso-2021.09.01-x86_64.iso: OK
 ```
 
-<!-- ```console
+```console
 $ gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 5BC6FBBAB02C73E4724B2CFC8C43C00BA8F06ECA
 gpg: key 8C43C00BA8F06ECA: "Carlos Aznarán <caznaranl@uni.pe>" not changed
 gpg: Total number processed: 1
 gpg:              unchanged: 1
-``` -->
+```
 
-<!-- ```console
-$ gpg --verify dunearchiso-2021.09.01-x86_64.iso.sig
-``` -->
+```console
+$ gpg --verify dunearchiso-2021.09.01-x86_64.iso.sig 
+gpg: assuming signed data in 'dunearchiso-2021.09.01-x86_64.iso'
+gpg: Signature made Wed 01 Sep 2021 07:14:47 PM -05
+gpg:                using RSA key 5BC6FBBAB02C73E4724B2CFC8C43C00BA8F06ECA
+gpg: Good signature from "Carlos Aznarán <caznaranl@uni.pe>" [ultimate]
+```
 
 > Since September 2021, there will be a new release every first day of the month, like Arch Linux.
+
+<!-- [](https://blog.programster.org/gpg-cheatsheet) -->
+<!-- [](https://www.oreilly.com/library/view/linux-security-cookbook/0596003919/ch07s14.html) -->
