@@ -155,7 +155,7 @@ openboard
 visual-studio-code-bin
 yay
 paraview-opt
-#base-devel
+# base-devel
 git-lfs
 screenkey
 # arch4edu
