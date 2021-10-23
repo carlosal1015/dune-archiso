@@ -127,7 +127,7 @@ zathura-pdf-mupdf
 zathura-ps
 #obs-studio
 #discord
-#nextcloud-client
+# nextcloud-client
 flameshot
 fd
 ripgrep
