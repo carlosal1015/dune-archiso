@@ -12,7 +12,7 @@ pacman-key --init
 # pacman-key --recv-keys BE381BCAC6A66564D937B699B63C67A37C97B2D8
 # pacman-key --finger BE381BCAC6A66564D937B699B63C67A37C97B2D8
 # pacman-key --lsign-key BE381BCAC6A66564D937B699B63C67A37C97B2D8
-curl https://git.omame.tech/CyberOS/cyberos-keyring/raw/branch/master/cyberos.gpg | gpg --import
+curl https://git.omame.xyz/CyberOS/cyberos-keyring/raw/branch/master/cyberos.gpg | gpg --import
 # Arch4edu
 pacman-key --recv-keys 7931B6D628C8D3BA
 pacman-key --finger 7931B6D628C8D3BA

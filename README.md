@@ -2,12 +2,12 @@
   <img alt="Dune Numerics" height="100px" vspace="" hspace="10"
     src="https://dune-project.org/share/dune-logo.svg?sanitize=true">
   <img alt="CyberOS" height="100px" vspace=""
-    src="https://git.omame.tech/CyberOS/website-wip/raw/branch/master/src/assets/images/cyber-logo.svg?sanitize=true">
+    src="https://git.omame.xyz/CyberOS/website-wip/raw/branch/master/src/assets/images/cyber-logo.svg?sanitize=true">
 </div>
 
 <h1 align="center">
   An <a href="https://gitlab.archlinux.org/archlinux/archiso">archiso</a>
-  <a href="https://git.omame.tech/CyberOS/cyberos-iso">profile</a>
+  <a href="https://git.omame.xyz/CyberOS/cyberos-iso">profile</a>
   based on <a href="https://getcyberos.org">CyberOS</a>
   with
   <a href="https://aur.archlinux.org/packages/dune-common">DUNE Numerics</a>
@@ -65,7 +65,7 @@ Some packages are from [here](https://dune-archiso.gitlab.io/packages).
 <p align="center">
   <blockquote>
     This source code was taken from
-    <a href="https://git.omame.tech/CyberOS/cyberos-iso">this archiso profile</a>
+    <a href="https://git.omame.xyz/CyberOS/cyberos-iso">this archiso profile</a>
     for <a href="https://getcyberos.org">CyberOS</a>, a
     <a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg">linux distribution</a>
     built with <a href="https://doc.qt.io/qt-5/qtquick-index.html">Qt Quick</a>
@@ -73,9 +73,9 @@ Some packages are from [here](https://dune-archiso.gitlab.io/packages).
   </blockquote>
 </p>
   <img alt="CyberOS Desktop" height="480px"
-    src="https://git.omame.tech/CyberOS/cyberos.github.io/raw/branch/master/src/images/preview_dark.png">
+    src="https://git.omame.xyz/CyberOS/cyberos.github.io/raw/branch/master/src/images/preview_dark.png">
   <img alt="CyberOS Settings" height="600px"
-    src="https://git.omame.tech/CyberOS/cyberos.github.io/raw/branch/master/src/images/preview_light.png">
+    src="https://git.omame.xyz/CyberOS/cyberos.github.io/raw/branch/master/src/images/preview_light.png">
 </div>
 
 ### Check the integrity ISO image
@@ -86,7 +86,7 @@ dunearchiso-2021.09.01-x86_64.iso  dunearchiso-2021.09.01-x86_64.iso.sha512sum  
 ```
 
 ```console
-$ sha512sum -c dunearchiso-2021.09.01-x86_64.iso.sha512sum 
+$ sha512sum -c dunearchiso-2021.09.01-x86_64.iso.sha512sum
 dunearchiso-2021.09.01-x86_64.iso: OK
 ```
 
@@ -98,7 +98,7 @@ gpg:              unchanged: 1
 ```
 
 ```console
-$ gpg --verify dunearchiso-2021.09.01-x86_64.iso.sig 
+$ gpg --verify dunearchiso-2021.09.01-x86_64.iso.sig
 gpg: assuming signed data in 'dunearchiso-2021.09.01-x86_64.iso'
 gpg: Signature made Wed 01 Sep 2021 07:14:47 PM -05
 gpg:                using RSA key 5BC6FBBAB02C73E4724B2CFC8C43C00BA8F06ECA

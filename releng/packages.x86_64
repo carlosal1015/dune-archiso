@@ -166,19 +166,18 @@ alberta
 # arch4edu
 parmetis
 superlu
-psurface-git
+psurface
 suitesparse
 python-sphinx
 vc
 doxygen
 arpackpp
-cmake
 # arch4edu
 #openblas-lapack
 python-pip
 # arch4edu
-ann
-voro++
+#ann
+#voro++
 gmsh
 # Dune packages
 dune-core
