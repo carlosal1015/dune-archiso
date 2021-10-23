@@ -176,8 +176,8 @@ arpackpp
 #openblas-lapack
 python-pip
 # arch4edu
-#ann
-#voro++
+# ann
+# voro++
 gmsh
 # Dune packages
 dune-core
