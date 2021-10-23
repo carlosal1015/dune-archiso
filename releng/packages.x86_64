@@ -126,7 +126,7 @@ zathura-djvu
 zathura-pdf-mupdf
 zathura-ps
 #obs-studio
-#discord
+# discord
 # nextcloud-client
 flameshot
 fd
