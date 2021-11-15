@@ -119,13 +119,13 @@ pulseaudio-alsa
 #open-vm-tools
 #virtualbox-guest-utils
 #gtkmm
-#gtk2
+# gtk2
 pacman-mirrorlist
 zathura
 zathura-djvu
 zathura-pdf-mupdf
 zathura-ps
-#obs-studio
+# obs-studio
 # discord
 # nextcloud-client
 flameshot
