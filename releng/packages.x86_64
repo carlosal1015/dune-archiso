@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 #amd-ucode
 #intel-ucode
-cyberos-base
+base#cyberos-base
 linux
 linux-firmware
 man-db
@@ -87,26 +87,26 @@ qt5-wayland
 qt5-x11extras
 qt5-xmlpatterns
 # Cyber packages
-#cyber-calculator
-#cyber-disk-usage
-#cyber-recorder
-#cyber-meta
-cyber-dock
-cyber-fm
-whitesur-icon-theme
-cyber-kwin-plugins
-cyber-launcher
-cyber-qt-plugins
-cyber-settings
-cyber-terminal
-cyber-wallpapers
-cyber-workspace
-libcyber-system
-meuikit
-cyber-calamares
-cyber-install-scripts
-cyberos-filesystem
-cyberos-keyring
+##cyber-calculator
+##cyber-disk-usage
+##cyber-recorder
+##cyber-meta
+#cyber-dock
+#cyber-fm
+#whitesur-icon-theme
+#cyber-kwin-plugins
+#cyber-launcher
+#cyber-qt-plugins
+#cyber-settings
+#cyber-terminal
+#cyber-wallpapers
+#cyber-workspace
+#libcyber-system
+#meuikit
+#cyber-calamares
+#cyber-install-scripts
+#cyberos-filesystem
+#cyberos-keyring
 # Extra packages
 neofetch
 gdm
@@ -176,14 +176,14 @@ arpackpp
 #openblas-lapack
 python-pip
 # arch4edu
-# ann
-# voro++
+ann
+#voro++
 gmsh
 # Dune packages
 dune-core
 dune-staging
 dune-extensions
-# dune-quality
+dune-quality
 dune-pdelab-module
 python-dune-fem
 opm-material
