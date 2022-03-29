@@ -43,9 +43,8 @@ jobs:
             makepkg --noconfirm -si
             sudo mkarchiso -v ~/dune-archiso/releng
             pacman -Qtdq | xargs -r pacman --noconfirm -Rcns > /dev/null 2>&1
-            # sudo chown -R $(whoami):$(whoami) ~/
             # sudo chmod -R 707 ~/out/*.iso ~/
-            rm -rf /work /home/aur/semicolon_delimited_script
+            rm -rfv /work /home/aur/semicolon_delimited_script
             md5sum /out/*.iso > /out/dunearchiso-`date +%Y.%m.%d`-x86_64.iso.md5
             mv /out/*.{iso,md5} /home/aur/dune-archiso
             ls -la /home/aur/dune-archiso
