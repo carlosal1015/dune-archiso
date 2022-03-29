@@ -36,12 +36,10 @@ jobs:
           options: --privileged -v ${{github.workspace}}:/home/aur/
           shell: bash
           run: |
-            whoami
-            pwd
+            sudo pacman --noconfirm -Sqyyu git archiso > /dev/null 2>&1
             cd ~
             git clone --filter=blob:none --depth=1 "https://git.omame.xyz/CyberOS/cyberos-keyring.git" && cd cyberos-keyring
             makepkg --noconfirm -si
-            sudo pacman --noconfirm -Sqyyu archiso > /dev/null 2>&1
             mkarchiso -v ~/dune-archiso/releng
             pacman -Qtdq | xargs -r pacman --noconfirm -Rcns > /dev/null 2>&1
             # sudo chown -R $(whoami):$(whoami) ~/
