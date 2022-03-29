@@ -154,7 +154,7 @@ gconf
 openboard
 visual-studio-code-bin
 yay
-paraview-opt
+paraview
 # base-devel
 git-lfs
 screenkey
