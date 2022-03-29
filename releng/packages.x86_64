@@ -166,7 +166,6 @@ alberta
 # arch4edu
 parmetis
 superlu
-psurface
 suitesparse
 python-sphinx
 vc

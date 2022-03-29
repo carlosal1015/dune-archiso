@@ -20,7 +20,7 @@ function since that Archlinux switch from a Sun provided implementation to the
 <a href="https://archlinux.org/packages/core/x86_64/libtirpc"><code>libtirpc</code></a>
 package which causes issues.
 <b>Credits</b>: v2.7.1 <code>dune-common</code>'s
-<a href="https://aur.archlinux.org/packages/?K=PrinceMachiavell&SeB=m">maintainer</a>
+<a href="https://aur.archlinux.org/packages?SeB=M&K=PrinceMachiavell">maintainer</a>
 from AUR.
 <br>
 ** More news soon! We succesfully compiled the <code>dune-uggrid</code> module!
