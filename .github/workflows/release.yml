@@ -14,7 +14,7 @@ jobs:
       - name: Maximize build space
         uses: easimon/maximize-build-space@master
         with:
-          root-reserve-mb: 46205
+          root-reserve-mb: 47005
           swap-size-mb: 1024
           remove-dotnet: "true"
           remove-android: "true"
@@ -38,7 +38,7 @@ jobs:
           run: |
             sudo chown -R 33333:33333 ~
             echo -e 'http://mirror.lty.me/archlinux/$repo/os/$arch' | sudo tee /etc/pacman.d/mirrorlist
-            sudo pacman --noconfirm -Sqyyu git archiso > /dev/null 2>&1
+            sudo pacman --noconfirm -Sqyyu git archiso #> /dev/null 2>&1
             cd ~
             git clone --filter=blob:none --depth=1 "https://git.omame.xyz/CyberOS/cyberos-keyring.git" && cd cyberos-keyring
             makepkg --noconfirm -si
