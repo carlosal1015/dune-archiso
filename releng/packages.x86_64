@@ -45,7 +45,6 @@ noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 telegram-desktop
-#signal-desktop
 #pyside2
 #qt5-3d
 qt5-base
@@ -145,12 +144,10 @@ clion-gdb
 clion-jre
 clion-lldb
 #pycharm-edu
-# libgccjit
 ttf-d2coding
 emacs-git
 imagine-git
 # arch4edu
-gconf
 openboard
 visual-studio-code-bin
 #yay
@@ -173,7 +170,6 @@ doxygen
 arpackpp
 # arch4edu
 #openblas-lapack
-python-pip
 # arch4edu
 ann
 ##voro++
