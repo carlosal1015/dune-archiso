@@ -38,7 +38,7 @@ jobs:
           run: |
             cat /etc/pacman.conf
             sudo chown -R 33333:33333 ~
-            echo -e 'http://mirror.math.princeton.edu/pub/archlinux/$repo/os/$arch' | sudo tee /etc/pacman.d/mirrorlist
+            echo -e 'Server = http://mirror.math.princeton.edu/pub/archlinux/$repo/os/$arch' | sudo tee /etc/pacman.d/mirrorlist
             cat /etc/pacman.d/mirrorlist
             sudo pacman --needed --noconfirm -Sqyyu git archiso > /dev/null 2>&1
             cd ~
