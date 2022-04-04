@@ -36,6 +36,7 @@ jobs:
           options: --privileged -v ${{github.workspace}}:/home/builder/
           shell: bash
           run: |
+            curl -s https://gitlab.com/dune-archiso/dune-archiso.gitlab.io/-/raw/main/templates/add_arch4edu.sh | sudo bash
             sudo chown -R 33333:33333 ~
             echo -e 'Server = http://mirror.lty.me/archlinux/$repo/os/$arch' | sudo tee /etc/pacman.d/mirrorlist
             sudo pacman --needed --noconfirm -Sqyyu git archiso > /dev/null 2>&1
